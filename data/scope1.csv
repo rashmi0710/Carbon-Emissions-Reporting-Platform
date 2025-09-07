@@ -1,124 +1,124 @@
-section,material,unit,date,quantity,emission_factor,emission_factor_unit,ghg_emission,location,date
-Pellet Plant,Anthracite Coal,tonnes,2006-01-01,136843.66,1.044,tCO2/t,142864.781,Central Steel Plant,2006-01-01
-Pellet Plant,Iron Scrap,tonnes,2006-01-01,399043.61,2.849,tCO2/KL,1136875.245,Central Steel Plant,2006-01-01
-Pellet Plant,Petroleum Coke,tonnes,2006-01-01,92899.41,1.39,tCO2/KL,129130.1799,Central Steel Plant,2006-01-01
-Pellet Plant,Bituminous Coal,tonnes,2006-01-01,476400.55,3.084,tCO2/KL,1469219.296,Central Steel Plant,2006-01-01
-Pellet Plant,Calcined Petroleum Coke,tonnes,2006-01-01,343775.39,2.036,tCO2/t,699926.694,Central Steel Plant,2006-01-01
-Pellet Plant,Limestone,tonnes,2006-01-01,107832.29,3.087,tCO2/t,332878.2792,Central Steel Plant,2006-01-01
-Pellet Plant,Natural Gas,kNm3,2006-01-01,47369055.82,2.425,tCO2/t,114869960.4,Central Steel Plant,2006-01-01
-Pellet Plant,Fuel Oil,KL,2006-01-01,7311.25,2.539,tCO2/t,18563.26375,Central Steel Plant,2006-01-01
-Pellet Plant,Diesel,KL,2006-01-01,2546.88,1.757,tCO2/t,4474.86816,Central Steel Plant,2006-01-01
-Pellet Plant,LPG,tonnes,2006-01-01,106734.66,3.346,tCO2/t,357134.1724,Central Steel Plant,2006-01-01
-DRI,Kerosene,KL,2006-01-01,5186.83,2.255,tCO2/KL,11696.30165,Central Steel Plant,2006-01-01
-DRI,Low Carbon Steel,tonnes,2006-01-01,12928.79,1.486,tCO2/t,19212.18194,Central Steel Plant,2006-01-01
-DRI,Ferrochrome,tonnes,2006-01-01,103814.29,2.124,tCO2/Nm3,220501.552,Central Steel Plant,2006-01-01
-DRI,Ferro Manganese,tonnes,2006-01-01,212400.27,0.071,tCO2/Nm3,15080.41917,Central Steel Plant,2006-01-01
-DRI,Ferro Silicon,tonnes,2006-01-01,187147.57,1.058,tCO2/KL,198002.1291,Central Steel Plant,2006-01-01
-DRI,Silico Manganese,tonnes,2006-01-01,231841.35,2.312,tCO2/KL,536017.2012,Central Steel Plant,2006-01-01
-DRI,Coke Oven Gas,kNm3,2006-01-01,13888659.03,1.018,tCO2/KL,14138654.89,Central Steel Plant,2006-01-01
-DRI,Blast Furnace Gas,kNm3,2006-01-01,29343349.48,2.165,tCO2/Nm3,63528351.62,Central Steel Plant,2006-01-01
-DRI,BOF Gas,kNm3,2006-01-01,43194141.74,1.503,tCO2/KL,64920795.04,Central Steel Plant,2006-01-01
-DRI,Coal Tar,tonnes,2006-01-01,58854.17,0.478,tCO2/KL,28132.29326,Central Steel Plant,2006-01-01
-DRI,Pitch,tonnes,2006-01-01,258737.82,1.047,tCO2/t,270898.4975,Central Steel Plant,2006-01-01
-DRI,EAF Electrodes,tonnes,2006-01-01,66120.85,1.997,tCO2/KL,132043.3375,Central Steel Plant,2006-01-01
-DRI,Dolomite,tonnes,2006-01-01,358458.15,2.07,tCO2/Nm3,742008.3705,Central Steel Plant,2006-01-01
-DRI,Crude Dolomite,tonnes,2006-01-01,198090.25,2.012,tCO2/KL,398557.583,Central Steel Plant,2006-01-01
-DRI,HFO,KL,2006-01-01,5658.56,2.288,tCO2/KL,12946.78528,Central Steel Plant,2006-01-01
-SMS,Lubricating Oil,KL,2006-01-01,1840.97,2.284,tCO2/t,4204.77548,Central Steel Plant,2006-01-01
-SMS,Hydraulic Oil,KL,2006-01-01,1457.03,1.512,tCO2/t,2203.02936,Central Steel Plant,2006-01-01
-SMS,Transformer Oil,KL,2006-01-01,4885.68,3.138,tCO2/KL,15331.26384,Central Steel Plant,2006-01-01
-SMS,Ethylene,tonnes,2006-01-01,177870.81,1.289,tCO2/KL,229275.4741,Central Steel Plant,2006-01-01
-SMS,Methane,kNm3,2006-01-01,47022192.94,1.528,tCO2/Nm3,71849910.81,Central Steel Plant,2006-01-01
-SMS,Acetylene,kNm3,2006-01-01,38268609.44,3.122,tCO2/KL,119474598.7,Central Steel Plant,2006-01-01
-SMS,Oxygen,kNm3,2006-01-01,37435694.36,2.822,tCO2/Nm3,105643529.5,Central Steel Plant,2006-01-01
-SMS,Argon,kNm3,2006-01-01,45186949.79,2.465,tCO2/Nm3,111385831.2,Central Steel Plant,2006-01-01
-SMS,Nitrogen,kNm3,2006-01-01,4180287.55,0.354,tCO2/KL,1479821.793,Central Steel Plant,2006-01-01
-SMS,Ammonia,tonnes,2006-01-01,276141.02,3.219,tCO2/Nm3,888897.9434,Central Steel Plant,2006-01-01
-SMS,Propane,tonnes,2006-01-01,292279.59,2.501,tCO2/Nm3,730991.2546,Central Steel Plant,2006-01-01
-SMS,Biomass Briquettes,tonnes,2006-01-01,480972.0,3.496,tCO2/t,1681478.112,Central Steel Plant,2006-01-01
-Rolling Mill,Charcoal,tonnes,2006-01-01,146144.55,0.526,tCO2/KL,76872.0333,Central Steel Plant,2006-01-01
-Rolling Mill,Plastic Waste Fuel,tonnes,2006-01-01,120490.31,3.039,tCO2/KL,366170.0521,Central Steel Plant,2006-01-01
-Rolling Mill,Wood Chips,tonnes,2006-01-01,50236.94,0.572,tCO2/KL,28735.52968,Central Steel Plant,2006-01-01
-Rolling Mill,Firewood,tonnes,2006-01-01,8313.17,2.156,tCO2/Nm3,17923.19452,Central Steel Plant,2006-01-01
-Rolling Mill,Carbon Black,tonnes,2006-01-01,464771.71,0.437,tCO2/KL,203105.2373,Central Steel Plant,2006-01-01
-Rolling Mill,Steel Scrap,tonnes,2006-01-01,334991.28,2.969,tCO2/KL,994589.1103,Central Steel Plant,2006-01-01
-Wire drawing,Recycled Oil,KL,2006-01-01,7853.68,2.826,tCO2/KL,22194.49968,Central Steel Plant,2006-01-01
-FAD,Spent Solvents,KL,2006-01-01,2824.48,1.994,tCO2/Nm3,5632.01312,Central Steel Plant,2006-01-01
-FAD,Waste Lubricants,KL,2006-01-01,5868.24,1.428,tCO2/t,8379.84672,Central Steel Plant,2006-01-01
-FAD,High Speed Diesel,KL,2006-01-01,648.91,0.246,tCO2/KL,159.63186,Central Steel Plant,2006-01-01
-FAD,Mineral Turpentine Oil,KL,2006-01-01,4861.42,2.442,tCO2/t,11871.58764,Central Steel Plant,2006-01-01
-FAD,Glycerine,tonnes,2006-01-01,488749.82,1.59,tCO2/KL,777112.2138,Central Steel Plant,2006-01-01
-FAD,Process Gas Mix,Nm3,2006-01-01,43826497.21,2.528,tCO2/KL,110793384.9,Central Steel Plant,2006-01-01
-FAD,Producer Gas,Nm3,2006-01-01,16914566.0,3.033,tCO2/Nm3,51301878.68,Central Steel Plant,2006-01-01
-FAD,Sponge Iron,tonnes,2006-01-01,480788.92,3.414,tCO2/t,1641413.373,Central Steel Plant,2006-01-01
-FAD,Mill Scale,tonnes,2006-01-01,115927.64,2.996,tCO2/Nm3,347319.2094,Central Steel Plant,2006-01-01
-Power Plant,Hot Metal,tonnes,2006-01-01,474664.48,0.045,tCO2/t,21359.9016,Central Steel Plant,2006-01-01
-Power Plant,Refractory Waste,tonnes,2006-01-01,470694.71,1.262,tCO2/Nm3,594016.724,Central Steel Plant,2006-01-01
-Power Plant,Carbon Paste,tonnes,2006-01-01,399621.37,2.556,tCO2/t,1021432.222,Central Steel Plant,2006-01-01
-Power Plant,Waste Tyres,tonnes,2006-01-01,315260.92,0.604,tCO2/Nm3,190417.5957,Central Steel Plant,2006-01-01
-Power Plant,Used Oils,KL,2006-01-01,8744.14,1.826,tCO2/t,15966.79964,Central Steel Plant,2006-01-01
-Power Plant,Coolant Fluids,KL,2006-01-01,2937.27,0.194,tCO2/t,569.83038,Central Steel Plant,2006-01-01
-Power Plant,Sludge Cake,tonnes,2006-01-01,424486.88,0.703,tCO2/t,298414.2766,Central Steel Plant,2006-01-01
-Overall,Non-condensable Gases,Nm3,2006-01-01,40897655.83,0.069,tCO2/t,2821938.252,Central Steel Plant,2006-01-01
-Overall,Combustible Residue,tonnes,2006-01-01,8717.11,2.779,tCO2/KL,24224.84869,Central Steel Plant,2006-01-01
-Overall,Industrial Grease,tonnes,2006-01-01,143682.04,0.787,tCO2/Nm3,113077.7655,Central Steel Plant,2006-01-01
-Pellet Plant,Anthracite Coal,tonnes,2006-04-01,156843.66,1.044,tCO2/t,163744.781,Central Steel Plant,2006-04-01
-Pellet Plant,Iron Scrap,tonnes,2006-04-01,599043.61,2.849,tCO2/KL,1706675.245,Central Steel Plant,2006-04-01
-Pellet Plant,Petroleum Coke,tonnes,2006-04-01,102899.41,1.39,tCO2/KL,143030.1799,Central Steel Plant,2006-04-01
-Pellet Plant,Bituminous Coal,tonnes,2006-04-01,276400.55,3.084,tCO2/KL,852419.2962,Central Steel Plant,2006-04-01
-Pellet Plant,Calcined Petroleum Coke,tonnes,2006-04-01,343875.39,2.036,tCO2/t,700130.294,Central Steel Plant,2006-04-01
-Pellet Plant,Limestone,tonnes,2006-04-01,117832.29,3.087,tCO2/t,363748.2792,Central Steel Plant,2006-04-01
-Pellet Plant,Natural Gas,kNm3,2006-04-01,47600055.82,2.425,tCO2/t,115430135.4,Central Steel Plant,2006-04-01
-Pellet Plant,Fuel Oil,KL,2006-04-01,8311.25,2.539,tCO2/t,21102.26375,Central Steel Plant,2006-04-01
-Pellet Plant,Diesel,KL,2006-04-01,3546.88,1.757,tCO2/t,6231.86816,Central Steel Plant,2006-04-01
-Pellet Plant,LPG,tonnes,2006-04-01,166734.66,3.346,tCO2/t,557894.1724,Central Steel Plant,2006-04-01
-DRI,Kerosene,KL,2006-04-01,8186.83,2.255,tCO2/KL,18461.30165,Central Steel Plant,2006-04-01
-DRI,Low Carbon Steel,tonnes,2006-04-01,15928.79,1.486,tCO2/t,23670.18194,Central Steel Plant,2006-04-01
-DRI,Ferrochrome,tonnes,2006-04-01,133814.29,2.124,tCO2/Nm3,284221.552,Central Steel Plant,2006-04-01
-DRI,Ferro Manganese,tonnes,2006-04-01,215400.27,0.071,tCO2/Nm3,15293.41917,Central Steel Plant,2006-04-01
-DRI,Ferro Silicon,tonnes,2006-04-01,197147.57,1.058,tCO2/KL,208582.1291,Central Steel Plant,2006-04-01
-DRI,Silico Manganese,tonnes,2006-04-01,251841.35,2.312,tCO2/KL,582257.2012,Central Steel Plant,2006-04-01
-DRI,Coke Oven Gas,kNm3,2006-04-01,13908659.03,1.018,tCO2/KL,14159014.89,Central Steel Plant,2006-04-01
-DRI,Blast Furnace Gas,kNm3,2006-04-01,39343349.48,2.165,tCO2/Nm3,85178351.62,Central Steel Plant,2006-04-01
-DRI,BOF Gas,kNm3,2006-04-01,33194141.74,1.503,tCO2/KL,49890795.04,Central Steel Plant,2006-04-01
-DRI,Coal Tar,tonnes,2006-04-01,78854.17,0.478,tCO2/KL,37692.29326,Central Steel Plant,2006-04-01
-DRI,Pitch,tonnes,2006-04-01,259937.82,1.047,tCO2/t,272154.8975,Central Steel Plant,2006-04-01
-DRI,EAF Electrodes,tonnes,2006-04-01,66020.85,1.997,tCO2/KL,131843.6375,Central Steel Plant,2006-04-01
-DRI,Dolomite,tonnes,2006-04-01,558458.15,2.07,tCO2/Nm3,1156008.371,Central Steel Plant,2006-04-01
-DRI,Crude Dolomite,tonnes,2006-04-01,188090.25,2.012,tCO2/KL,378437.583,Central Steel Plant,2006-04-01
-DRI,HFO,KL,2006-04-01,7658.56,2.288,tCO2/KL,17522.78528,Central Steel Plant,2006-04-01
-SMS,Lubricating Oil,KL,2006-04-01,1860.97,2.284,tCO2/t,4250.45548,Central Steel Plant,2006-04-01
-SMS,Hydraulic Oil,KL,2006-04-01,2057.03,1.512,tCO2/t,3110.22936,Central Steel Plant,2006-04-01
-SMS,Transformer Oil,KL,2006-04-01,4885.68,3.138,tCO2/KL,15331.26384,Central Steel Plant,2006-04-01
-SMS,Ethylene,tonnes,2006-04-01,177870.81,1.289,tCO2/KL,229275.4741,Central Steel Plant,2006-04-01
-SMS,Methane,kNm3,2006-04-01,77022192.94,1.528,tCO2/Nm3,117689910.8,Central Steel Plant,2006-04-01
-SMS,Acetylene,kNm3,2006-04-01,3999609.44,3.122,tCO2/KL,12486780.67,Central Steel Plant,2006-04-01
-SMS,Oxygen,kNm3,2006-04-01,37489694.36,2.822,tCO2/Nm3,105795917.5,Central Steel Plant,2006-04-01
-SMS,Argon,kNm3,2006-04-01,55186949.79,2.465,tCO2/Nm3,136035831.2,Central Steel Plant,2006-04-01
-SMS,Nitrogen,kNm3,2006-04-01,5180287.55,0.354,tCO2/KL,1833821.793,Central Steel Plant,2006-04-01
-SMS,Ammonia,tonnes,2006-04-01,776141.02,3.219,tCO2/Nm3,2498397.943,Central Steel Plant,2006-04-01
-SMS,Propane,tonnes,2006-04-01,992279.59,2.501,tCO2/Nm3,2481691.255,Central Steel Plant,2006-04-01
-SMS,Biomass Briquettes,tonnes,2006-04-01,880972.0,3.496,tCO2/t,3079878.112,Central Steel Plant,2006-04-01
-Rolling Mill,Charcoal,tonnes,2006-04-01,166144.55,0.526,tCO2/KL,87392.0333,Central Steel Plant,2006-04-01
-Rolling Mill,Plastic Waste Fuel,tonnes,2006-04-01,180490.31,3.039,tCO2/KL,548510.0521,Central Steel Plant,2006-04-01
-Rolling Mill,Wood Chips,tonnes,2006-04-01,50876.94,0.572,tCO2/KL,29101.60968,Central Steel Plant,2006-04-01
-Rolling Mill,Firewood,tonnes,2006-04-01,8313.17,2.156,tCO2/Nm3,17923.19452,Central Steel Plant,2006-04-01
-Rolling Mill,Carbon Black,tonnes,2006-04-01,482371.71,0.437,tCO2/KL,210796.4373,Central Steel Plant,2006-04-01
-Rolling Mill,Steel Scrap,tonnes,2006-04-01,674991.28,2.969,tCO2/KL,2004049.11,Central Steel Plant,2006-04-01
-Wire drawing,Recycled Oil,KL,2006-04-01,9853.68,2.826,tCO2/KL,27846.49968,Central Steel Plant,2006-04-01
-FAD,Spent Solvents,KL,2006-04-01,2824.48,1.994,tCO2/Nm3,5632.01312,Central Steel Plant,2006-04-01
-FAD,Waste Lubricants,KL,2006-04-01,7868.24,1.428,tCO2/t,11235.84672,Central Steel Plant,2006-04-01
-FAD,High Speed Diesel,KL,2006-04-01,1000.91,0.246,tCO2/KL,246.22386,Central Steel Plant,2006-04-01
-FAD,Mineral Turpentine Oil,KL,2006-04-01,7661.42,2.442,tCO2/t,18709.18764,Central Steel Plant,2006-04-01
-FAD,Glycerine,tonnes,2006-04-01,888749.82,1.59,tCO2/KL,1413112.214,Central Steel Plant,2006-04-01
-FAD,Process Gas Mix,Nm3,2006-04-01,43826497.21,2.528,tCO2/KL,110793384.9,Central Steel Plant,2006-04-01
-FAD,Producer Gas,Nm3,2006-04-01,18814566.0,3.033,tCO2/Nm3,57064578.68,Central Steel Plant,2006-04-01
-FAD,Sponge Iron,tonnes,2006-04-01,480000.0,3.414,tCO2/t,1638720.0,Central Steel Plant,2006-04-01
-FAD,Mill Scale,tonnes,2006-04-01,115927.64,2.996,tCO2/Nm3,347319.2094,Central Steel Plant,2006-04-01
-Power Plant,Hot Metal,tonnes,2006-04-01,474664.48,0.045,tCO2/t,21359.9016,Central Steel Plant,2006-04-01
-Power Plant,Refractory Waste,tonnes,2006-04-01,470694.71,1.262,tCO2/Nm3,594016.724,Central Steel Plant,2006-04-01
-Power Plant,Carbon Paste,tonnes,2006-04-01,399621.37,2.556,tCO2/t,1021432.222,Central Steel Plant,2006-04-01
-Power Plant,Waste Tyres,tonnes,2006-04-01,315260.92,0.604,tCO2/Nm3,190417.5957,Central Steel Plant,2006-04-01
-Power Plant,Used Oils,KL,2006-04-01,8744.14,1.826,tCO2/t,15966.79964,Central Steel Plant,2006-04-01
-Power Plant,Coolant Fluids,KL,2006-04-01,4937.27,0.194,tCO2/t,957.83038,Central Steel Plant,2006-04-01
-Power Plant,Sludge Cake,tonnes,2006-04-01,624486.88,0.703,tCO2/t,439014.2766,Central Steel Plant,2006-04-01
+section,material,unit,quantity,emission_factor,emission_factor_unit,ghg_emission,location,start_date,end_date
+Pellet Plant,Anthracite Coal,tonnes,136843.66,1.044,tCO2/t,142864.781,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,Iron Scrap,tonnes,399043.61,2.849,tCO2/KL,1136875.245,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,Petroleum Coke,tonnes,92899.41,1.39,tCO2/KL,129130.1799,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,Bituminous Coal,tonnes,476400.55,3.084,tCO2/KL,1469219.296,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,Calcined Petroleum Coke,tonnes,343775.39,2.036,tCO2/t,699926.694,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,Limestone,tonnes,107832.29,3.087,tCO2/t,332878.2792,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,Natural Gas,kNm3,47369055.82,2.425,tCO2/t,114869960.4,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,Fuel Oil,KL,7311.25,2.539,tCO2/t,18563.26375,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,Diesel,KL,2546.88,1.757,tCO2/t,4474.86816,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,LPG,tonnes,106734.66,3.346,tCO2/t,357134.1724,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Kerosene,KL,5186.83,2.255,tCO2/KL,11696.30165,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Low Carbon Steel,tonnes,12928.79,1.486,tCO2/t,19212.18194,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Ferrochrome,tonnes,103814.29,2.124,tCO2/Nm3,220501.552,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Ferro Manganese,tonnes,212400.27,0.071,tCO2/Nm3,15080.41917,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Ferro Silicon,tonnes,187147.57,1.058,tCO2/KL,198002.1291,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Silico Manganese,tonnes,231841.35,2.312,tCO2/KL,536017.2012,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Coke Oven Gas,kNm3,13888659.03,1.018,tCO2/KL,14138654.89,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Blast Furnace Gas,kNm3,29343349.48,2.165,tCO2/Nm3,63528351.62,Central Steel Plant,01-01-2006,31-03-2006
+DRI,BOF Gas,kNm3,43194141.74,1.503,tCO2/KL,64920795.04,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Coal Tar,tonnes,58854.17,0.478,tCO2/KL,28132.29326,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Pitch,tonnes,258737.82,1.047,tCO2/t,270898.4975,Central Steel Plant,01-01-2006,31-03-2006
+DRI,EAF Electrodes,tonnes,66120.85,1.997,tCO2/KL,132043.3375,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Dolomite,tonnes,358458.15,2.07,tCO2/Nm3,742008.3705,Central Steel Plant,01-01-2006,31-03-2006
+DRI,Crude Dolomite,tonnes,198090.25,2.012,tCO2/KL,398557.583,Central Steel Plant,01-01-2006,31-03-2006
+DRI,HFO,KL,5658.56,2.288,tCO2/KL,12946.78528,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Lubricating Oil,KL,1840.97,2.284,tCO2/t,4204.77548,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Hydraulic Oil,KL,1457.03,1.512,tCO2/t,2203.02936,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Transformer Oil,KL,4885.68,3.138,tCO2/KL,15331.26384,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Ethylene,tonnes,177870.81,1.289,tCO2/KL,229275.4741,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Methane,kNm3,47022192.94,1.528,tCO2/Nm3,71849910.81,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Acetylene,kNm3,38268609.44,3.122,tCO2/KL,119474598.7,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Oxygen,kNm3,37435694.36,2.822,tCO2/Nm3,105643529.5,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Argon,kNm3,45186949.79,2.465,tCO2/Nm3,111385831.2,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Nitrogen,kNm3,4180287.55,0.354,tCO2/KL,1479821.793,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Ammonia,tonnes,276141.02,3.219,tCO2/Nm3,888897.9434,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Propane,tonnes,292279.59,2.501,tCO2/Nm3,730991.2546,Central Steel Plant,01-01-2006,31-03-2006
+SMS,Biomass Briquettes,tonnes,480972,3.496,tCO2/t,1681478.112,Central Steel Plant,01-01-2006,31-03-2006
+Rolling Mill,Charcoal,tonnes,146144.55,0.526,tCO2/KL,76872.0333,Central Steel Plant,01-01-2006,31-03-2006
+Rolling Mill,Plastic Waste Fuel,tonnes,120490.31,3.039,tCO2/KL,366170.0521,Central Steel Plant,01-01-2006,31-03-2006
+Rolling Mill,Wood Chips,tonnes,50236.94,0.572,tCO2/KL,28735.52968,Central Steel Plant,01-01-2006,31-03-2006
+Rolling Mill,Firewood,tonnes,8313.17,2.156,tCO2/Nm3,17923.19452,Central Steel Plant,01-01-2006,31-03-2006
+Rolling Mill,Carbon Black,tonnes,464771.71,0.437,tCO2/KL,203105.2373,Central Steel Plant,01-01-2006,31-03-2006
+Rolling Mill,Steel Scrap,tonnes,334991.28,2.969,tCO2/KL,994589.1103,Central Steel Plant,01-01-2006,31-03-2006
+Wire drawing,Recycled Oil,KL,7853.68,2.826,tCO2/KL,22194.49968,Central Steel Plant,01-01-2006,31-03-2006
+FAD,Spent Solvents,KL,2824.48,1.994,tCO2/Nm3,5632.01312,Central Steel Plant,01-01-2006,31-03-2006
+FAD,Waste Lubricants,KL,5868.24,1.428,tCO2/t,8379.84672,Central Steel Plant,01-01-2006,31-03-2006
+FAD,High Speed Diesel,KL,648.91,0.246,tCO2/KL,159.63186,Central Steel Plant,01-01-2006,31-03-2006
+FAD,Mineral Turpentine Oil,KL,4861.42,2.442,tCO2/t,11871.58764,Central Steel Plant,01-01-2006,31-03-2006
+FAD,Glycerine,tonnes,488749.82,1.59,tCO2/KL,777112.2138,Central Steel Plant,01-01-2006,31-03-2006
+FAD,Process Gas Mix,Nm3,43826497.21,2.528,tCO2/KL,110793384.9,Central Steel Plant,01-01-2006,31-03-2006
+FAD,Producer Gas,Nm3,16914566,3.033,tCO2/Nm3,51301878.68,Central Steel Plant,01-01-2006,31-03-2006
+FAD,Sponge Iron,tonnes,480788.92,3.414,tCO2/t,1641413.373,Central Steel Plant,01-01-2006,31-03-2006
+FAD,Mill Scale,tonnes,115927.64,2.996,tCO2/Nm3,347319.2094,Central Steel Plant,01-01-2006,31-03-2006
+Power Plant,Hot Metal,tonnes,474664.48,0.045,tCO2/t,21359.9016,Central Steel Plant,01-01-2006,31-03-2006
+Power Plant,Refractory Waste,tonnes,470694.71,1.262,tCO2/Nm3,594016.724,Central Steel Plant,01-01-2006,31-03-2006
+Power Plant,Carbon Paste,tonnes,399621.37,2.556,tCO2/t,1021432.222,Central Steel Plant,01-01-2006,31-03-2006
+Power Plant,Waste Tyres,tonnes,315260.92,0.604,tCO2/Nm3,190417.5957,Central Steel Plant,01-01-2006,31-03-2006
+Power Plant,Used Oils,KL,8744.14,1.826,tCO2/t,15966.79964,Central Steel Plant,01-01-2006,31-03-2006
+Power Plant,Coolant Fluids,KL,2937.27,0.194,tCO2/t,569.83038,Central Steel Plant,01-01-2006,31-03-2006
+Power Plant,Sludge Cake,tonnes,424486.88,0.703,tCO2/t,298414.2766,Central Steel Plant,01-01-2006,31-03-2006
+Overall,Non-condensable Gases,Nm3,40897655.83,0.069,tCO2/t,2821938.252,Central Steel Plant,01-01-2006,31-03-2006
+Overall,Combustible Residue,tonnes,8717.11,2.779,tCO2/KL,24224.84869,Central Steel Plant,01-01-2006,31-03-2006
+Overall,Industrial Grease,tonnes,143682.04,0.787,tCO2/Nm3,113077.7655,Central Steel Plant,01-01-2006,31-03-2006
+Pellet Plant,Anthracite Coal,tonnes,156843.66,1.044,tCO2/t,163744.781,Central Steel Plant,01-04-2006,30-06-2006
+Pellet Plant,Iron Scrap,tonnes,599043.61,2.849,tCO2/KL,1706675.245,Central Steel Plant,01-04-2006,30-06-2006
+Pellet Plant,Petroleum Coke,tonnes,102899.41,1.39,tCO2/KL,143030.1799,Central Steel Plant,01-04-2006,30-06-2006
+Pellet Plant,Bituminous Coal,tonnes,276400.55,3.084,tCO2/KL,852419.2962,Central Steel Plant,01-04-2006,30-06-2006
+Pellet Plant,Calcined Petroleum Coke,tonnes,343875.39,2.036,tCO2/t,700130.294,Central Steel Plant,01-04-2006,30-06-2006
+Pellet Plant,Limestone,tonnes,117832.29,3.087,tCO2/t,363748.2792,Central Steel Plant,01-04-2006,30-06-2006
+Pellet Plant,Natural Gas,kNm3,47600055.82,2.425,tCO2/t,115430135.4,Central Steel Plant,01-04-2006,30-06-2006
+Pellet Plant,Fuel Oil,KL,8311.25,2.539,tCO2/t,21102.26375,Central Steel Plant,01-04-2006,30-06-2006
+Pellet Plant,Diesel,KL,3546.88,1.757,tCO2/t,6231.86816,Central Steel Plant,01-04-2006,30-06-2006
+Pellet Plant,LPG,tonnes,166734.66,3.346,tCO2/t,557894.1724,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Kerosene,KL,8186.83,2.255,tCO2/KL,18461.30165,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Low Carbon Steel,tonnes,15928.79,1.486,tCO2/t,23670.18194,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Ferrochrome,tonnes,133814.29,2.124,tCO2/Nm3,284221.552,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Ferro Manganese,tonnes,215400.27,0.071,tCO2/Nm3,15293.41917,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Ferro Silicon,tonnes,197147.57,1.058,tCO2/KL,208582.1291,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Silico Manganese,tonnes,251841.35,2.312,tCO2/KL,582257.2012,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Coke Oven Gas,kNm3,13908659.03,1.018,tCO2/KL,14159014.89,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Blast Furnace Gas,kNm3,39343349.48,2.165,tCO2/Nm3,85178351.62,Central Steel Plant,01-04-2006,30-06-2006
+DRI,BOF Gas,kNm3,33194141.74,1.503,tCO2/KL,49890795.04,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Coal Tar,tonnes,78854.17,0.478,tCO2/KL,37692.29326,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Pitch,tonnes,259937.82,1.047,tCO2/t,272154.8975,Central Steel Plant,01-04-2006,30-06-2006
+DRI,EAF Electrodes,tonnes,66020.85,1.997,tCO2/KL,131843.6375,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Dolomite,tonnes,558458.15,2.07,tCO2/Nm3,1156008.371,Central Steel Plant,01-04-2006,30-06-2006
+DRI,Crude Dolomite,tonnes,188090.25,2.012,tCO2/KL,378437.583,Central Steel Plant,01-04-2006,30-06-2006
+DRI,HFO,KL,7658.56,2.288,tCO2/KL,17522.78528,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Lubricating Oil,KL,1860.97,2.284,tCO2/t,4250.45548,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Hydraulic Oil,KL,2057.03,1.512,tCO2/t,3110.22936,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Transformer Oil,KL,4885.68,3.138,tCO2/KL,15331.26384,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Ethylene,tonnes,177870.81,1.289,tCO2/KL,229275.4741,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Methane,kNm3,77022192.94,1.528,tCO2/Nm3,117689910.8,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Acetylene,kNm3,3999609.44,3.122,tCO2/KL,12486780.67,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Oxygen,kNm3,37489694.36,2.822,tCO2/Nm3,105795917.5,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Argon,kNm3,55186949.79,2.465,tCO2/Nm3,136035831.2,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Nitrogen,kNm3,5180287.55,0.354,tCO2/KL,1833821.793,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Ammonia,tonnes,776141.02,3.219,tCO2/Nm3,2498397.943,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Propane,tonnes,992279.59,2.501,tCO2/Nm3,2481691.255,Central Steel Plant,01-04-2006,30-06-2006
+SMS,Biomass Briquettes,tonnes,880972,3.496,tCO2/t,3079878.112,Central Steel Plant,01-04-2006,30-06-2006
+Rolling Mill,Charcoal,tonnes,166144.55,0.526,tCO2/KL,87392.0333,Central Steel Plant,01-04-2006,30-06-2006
+Rolling Mill,Plastic Waste Fuel,tonnes,180490.31,3.039,tCO2/KL,548510.0521,Central Steel Plant,01-04-2006,30-06-2006
+Rolling Mill,Wood Chips,tonnes,50876.94,0.572,tCO2/KL,29101.60968,Central Steel Plant,01-04-2006,30-06-2006
+Rolling Mill,Firewood,tonnes,8313.17,2.156,tCO2/Nm3,17923.19452,Central Steel Plant,01-04-2006,30-06-2006
+Rolling Mill,Carbon Black,tonnes,482371.71,0.437,tCO2/KL,210796.4373,Central Steel Plant,01-04-2006,30-06-2006
+Rolling Mill,Steel Scrap,tonnes,674991.28,2.969,tCO2/KL,2004049.11,Central Steel Plant,01-04-2006,30-06-2006
+Wire drawing,Recycled Oil,KL,9853.68,2.826,tCO2/KL,27846.49968,Central Steel Plant,01-04-2006,30-06-2006
+FAD,Spent Solvents,KL,2824.48,1.994,tCO2/Nm3,5632.01312,Central Steel Plant,01-04-2006,30-06-2006
+FAD,Waste Lubricants,KL,7868.24,1.428,tCO2/t,11235.84672,Central Steel Plant,01-04-2006,30-06-2006
+FAD,High Speed Diesel,KL,1000.91,0.246,tCO2/KL,246.22386,Central Steel Plant,01-04-2006,30-06-2006
+FAD,Mineral Turpentine Oil,KL,7661.42,2.442,tCO2/t,18709.18764,Central Steel Plant,01-04-2006,30-06-2006
+FAD,Glycerine,tonnes,888749.82,1.59,tCO2/KL,1413112.214,Central Steel Plant,01-04-2006,30-06-2006
+FAD,Process Gas Mix,Nm3,43826497.21,2.528,tCO2/KL,110793384.9,Central Steel Plant,01-04-2006,30-06-2006
+FAD,Producer Gas,Nm3,18814566,3.033,tCO2/Nm3,57064578.68,Central Steel Plant,01-04-2006,30-06-2006
+FAD,Sponge Iron,tonnes,480000,3.414,tCO2/t,1638720,Central Steel Plant,01-04-2006,30-06-2006
+FAD,Mill Scale,tonnes,115927.64,2.996,tCO2/Nm3,347319.2094,Central Steel Plant,01-04-2006,30-06-2006
+Power Plant,Hot Metal,tonnes,474664.48,0.045,tCO2/t,21359.9016,Central Steel Plant,01-04-2006,30-06-2006
+Power Plant,Refractory Waste,tonnes,470694.71,1.262,tCO2/Nm3,594016.724,Central Steel Plant,01-04-2006,30-06-2006
+Power Plant,Carbon Paste,tonnes,399621.37,2.556,tCO2/t,1021432.222,Central Steel Plant,01-04-2006,30-06-2006
+Power Plant,Waste Tyres,tonnes,315260.92,0.604,tCO2/Nm3,190417.5957,Central Steel Plant,01-04-2006,30-06-2006
+Power Plant,Used Oils,KL,8744.14,1.826,tCO2/t,15966.79964,Central Steel Plant,01-04-2006,30-06-2006
+Power Plant,Coolant Fluids,KL,4937.27,0.194,tCO2/t,957.83038,Central Steel Plant,01-04-2006,30-06-2006
+Power Plant,Sludge Cake,tonnes,624486.88,0.703,tCO2/t,439014.2766,Central Steel Plant,01-04-2006,30-06-2006
