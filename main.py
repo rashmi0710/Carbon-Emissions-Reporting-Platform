@@ -123,6 +123,22 @@ def create_scope2_emission(item: EnergyEmissionSchema, db: Session = Depends(get
 def list_scope2_emissions(db: Session = Depends(get_db)):
     return db.query(EnergyEmission).all()
 
+@app.get("/scope2/{emission_id}", response_model=EnergyEmissionOutSchema)
+def get_scope2_emission(emission_id: int, db: Session = Depends(get_db)):
+    emission = db.query(EnergyEmission).filter(EnergyEmission.id == emission_id).first()
+    if not emission:
+        raise HTTPException(status_code=404, detail="Emission not found")
+    return emission
+
+
+@app.delete("/scope2/{emission_id}")
+def delete_scope2_emission(emission_id: int, db: Session = Depends(get_db)):
+    emission = db.query(EnergyEmission).filter(EnergyEmission.id == emission_id).first()
+    if not emission:
+        raise HTTPException(status_code=404, detail="Emission not found")
+    db.delete(emission)
+    db.commit()
+    return {"detail": "Deleted"}
 # ------------------------------
 # Scope 3
 # ------------------------------
@@ -137,3 +153,20 @@ def create_scope3_emission(item: ValueChainEmissionSchema, db: Session = Depends
 @app.get("/scope3/", response_model=List[ValueChainEmissionOutSchema])
 def list_scope3_emissions(db: Session = Depends(get_db)):
     return db.query(ValueChainEmission).all()
+
+@app.get("/scope3/{emission_id}", response_model=ValueChainEmissionOutSchema)
+def get_scope3_emission(emission_id: int, db: Session = Depends(get_db)):
+    emission = db.query(ValueChainEmission).filter(ValueChainEmission.id == emission_id).first()
+    if not emission:
+        raise HTTPException(status_code=404, detail="Emission not found")
+    return emission
+
+
+@app.delete("/scope3/{emission_id}")
+def delete_scope3_emission(emission_id: int, db: Session = Depends(get_db)):
+    emission = db.query(ValueChainEmission).filter(ValueChainEmission.id == emission_id).first()
+    if not emission:
+        raise HTTPException(status_code=404, detail="Emission not found")
+    db.delete(emission)
+    db.commit()
+    return {"detail": "Deleted"}
