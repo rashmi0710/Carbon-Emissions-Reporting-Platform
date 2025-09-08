@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from contextlib import asynccontextmanager
 from typing import List, Optional
-from models import EmissionFactor, EmissionRecord, BusinessMetric
+from models import EmissionFactor, EmissionRecord, BusinessMetric, AuditLog
 from database import SessionLocal, engine, Base
 from pydantic import BaseModel, Field
 import datetime
@@ -67,6 +67,21 @@ class BusinessMetricSchema(BaseModel):
         from_attributes = True
 
 class BusinessMetricOutSchema(BusinessMetricSchema):
+    id: int
+
+class AuditLogSchema(BaseModel):
+    record_id: int
+    field_name: str
+    old_value: Optional[str] = None
+    new_value: Optional[str] = None
+    changed_by: Optional[int] = None
+    changed_at: datetime.date
+    reason: Optional[str] = None
+
+    class Config:
+        from_attributes = True
+
+class AuditLogOutSchema(AuditLogSchema):
     id: int
 
 # ------------------------------
@@ -211,29 +226,44 @@ def delete_emission(emission_id: int, db: Session = Depends(get_db)):
     return {"detail": "Deleted"}
 
 # ------------------------------
+# Audit Log CRUD
+# ------------------------------
+@app.post("/audit/", response_model=AuditLogOutSchema)
+def create_audit_log(item: AuditLogSchema, db: Session = Depends(get_db)):
+    log = AuditLog(**item.model_dump())
+    db.add(log)
+    db.commit()
+    db.refresh(log)
+    return log
+
+@app.get("/audit/", response_model=List[AuditLogOutSchema])
+def list_audit_logs(db: Session = Depends(get_db)):
+    return db.query(AuditLog).all()
+
+# ------------------------------
 # Emission Intensity Reporting
 # ------------------------------
 @app.get("/intensity/")
 def emission_intensity(metric_name: str, metric_date: datetime.date, db: Session = Depends(get_db)):
-    # Find total emissions for given date
+    # Total GHG on that date
     total_ghg = db.query(EmissionRecord).filter(
         EmissionRecord.recorded_at == metric_date
-    ).with_entities(
-        EmissionRecord.ghg_emission
-    )
+    ).with_entities(EmissionRecord.ghg_emission).all()
     total_ghg = sum([row.ghg_emission for row in total_ghg])
-    # Find metric value for given date
+
+    # Business metric on that date
     metric = db.query(BusinessMetric).filter(
         BusinessMetric.metric_name == metric_name,
         BusinessMetric.metric_date == metric_date
     ).first()
     if not metric or metric.value == 0:
         raise HTTPException(status_code=404, detail="Business metric not found or zero value")
+
     intensity = total_ghg / metric.value
     return {
         "metric_name": metric_name,
         "metric_date": str(metric_date),
         "total_ghg_emission": total_ghg,
         "metric_value": metric.value,
-        "intensity": intensity  # kgCO2e per unit metric
+        "intensity": intensity
     }

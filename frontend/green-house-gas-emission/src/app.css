@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this in app.css */
+
+/* Background container */
+.app-container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #064e3b, #065f46, #047857, #059669, #10b981);
+}
+
+/* CO₂ bubbles */
+.co2-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.co2-bubble {
+  position: absolute;
+  width: 22px;   /* increased */
+  height: 22px;  /* increased */
+  background: #d1d5db;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: bounce 3s infinite;
+}
+
+.co2-label {
+  position: absolute;
+  top: -6px;   /* adjust label position slightly */
+  left: -12px; /* adjust for bigger bubble */
+  font-size: 11px;  /* a bit larger */
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Main content */
+.main-content {
+  position: relative;
+  z-index: 20;
+  padding: 24px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.content-wrapper {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Header box */
+.header-box {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.header-title {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.header-subtitle {
+  color: #bbf7d0;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+
+
+/* Animations */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
