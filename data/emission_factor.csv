@@ -1,0 +1,85 @@
+activity,emission_factor_unit,co2e_value,source,valid_from,valid_to
+Wire drawing-Recycled Oil,tCO2/KL,2.826,IPCC 2006 Guidelines,2006-01-01,2006-03-31
+Overall-Non-condensable Gases,tCO2/t,0.069,IPCC 2006 Guidelines,2006-01-01,2006-03-31
+Overall-Combustible Residue,tCO2/KL,2.779,IPCC 2006 Guidelines,2006-01-01,2006-03-31
+Overall-Industrial Grease,tCO2/Nm3,0.787,IPCC 2006 Guidelines,2006-01-01,2006-03-31
+Pellet Plant-Anthracite Coal,tCO2/t,1.044,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Pellet Plant-Iron Scrap,tCO2/KL,2.849,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Pellet Plant-Petroleum Coke,tCO2/KL,1.39,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Pellet Plant-Bituminous Coal,tCO2/KL,3.084,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Pellet Plant-Calcined Petroleum Coke,tCO2/t,2.036,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Pellet Plant-Limestone,tCO2/t,3.087,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Pellet Plant-Natural Gas,tCO2/t,2.425,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Pellet Plant-Fuel Oil,tCO2/t,2.539,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Pellet Plant-Diesel,tCO2/t,1.757,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Pellet Plant-LPG,tCO2/t,3.346,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Kerosene,tCO2/KL,2.255,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Low Carbon Steel,tCO2/t,1.486,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Ferrochrome,tCO2/Nm3,2.124,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Ferro Manganese,tCO2/Nm3,0.071,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Ferro Silicon,tCO2/KL,1.058,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Silico Manganese,tCO2/KL,2.312,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Coke Oven Gas,tCO2/KL,1.018,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Blast Furnace Gas,tCO2/Nm3,2.165,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-BOF Gas,tCO2/KL,1.503,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Coal Tar,tCO2/KL,0.478,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Pitch,tCO2/t,1.047,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-EAF Electrodes,tCO2/KL,1.997,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Dolomite,tCO2/Nm3,2.07,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-Crude Dolomite,tCO2/KL,2.012,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+DRI-HFO,tCO2/KL,2.288,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Lubricating Oil,tCO2/t,2.284,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Hydraulic Oil,tCO2/t,1.512,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Transformer Oil,tCO2/KL,3.138,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Ethylene,tCO2/KL,1.289,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Methane,tCO2/Nm3,1.528,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Acetylene,tCO2/KL,3.122,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Oxygen,tCO2/Nm3,2.822,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Argon,tCO2/Nm3,2.465,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Nitrogen,tCO2/KL,0.354,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Ammonia,tCO2/Nm3,3.219,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Propane,tCO2/Nm3,2.501,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+SMS-Biomass Briquettes,tCO2/t,3.496,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Rolling Mill-Charcoal,tCO2/KL,0.526,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Rolling Mill-Plastic Waste Fuel,tCO2/KL,3.039,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Rolling Mill-Wood Chips,tCO2/KL,0.572,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Rolling Mill-Firewood,tCO2/Nm3,2.156,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Rolling Mill-Carbon Black,tCO2/KL,0.437,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Rolling Mill-Steel Scrap,tCO2/KL,2.969,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+FAD-Spent Solvents,tCO2/Nm3,1.994,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+FAD-Waste Lubricants,tCO2/t,1.428,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+FAD-High Speed Diesel,tCO2/KL,0.246,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+FAD-Mineral Turpentine Oil,tCO2/t,2.442,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+FAD-Glycerine,tCO2/KL,1.59,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+FAD-Process Gas Mix,tCO2/KL,2.528,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+FAD-Producer Gas,tCO2/Nm3,3.033,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+FAD-Sponge Iron,tCO2/t,3.414,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+FAD-Mill Scale,tCO2/Nm3,2.996,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Power Plant-Hot Metal,tCO2/t,0.045,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Power Plant-Refractory Waste,tCO2/Nm3,1.262,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Power Plant-Carbon Paste,tCO2/t,2.556,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Power Plant-Waste Tyres,tCO2/Nm3,0.604,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Power Plant-Used Oils,tCO2/t,1.826,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Power Plant-Coolant Fluids,tCO2/t,0.194,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+Power Plant-Sludge Cake,tCO2/t,0.703,IPCC 2006 Guidelines,2006-04-01,2006-06-30
+EAF-Purchased Electricity,tCO2/kWh,0.8,CEA India 2023 Report,2023-01-01,2023-03-31
+Pellet Plant-Purchased Electricity,tCO2/kWh,0.6,CEA India 2023 Report,2023-01-01,2023-03-31
+"Utilities (WDU, etc)-Imported Steam",tCO2/GJ,0.2,CEA India 2023 Report,2023-01-01,2023-03-31
+Admin Buildings-Purchased Electricity,tCO2/kWh,0.85,CEA India 2023 Report,2023-01-01,2023-03-31
+Power Plant-Electricity Consumption,tCO2/kWh,0.71,CEA India 2023 Report,2023-04-01,2023-06-30
+Rolling Mill-Purchased Electricity,tCO2/kWh,0.8,CEA India 2023 Report,2023-07-01,2023-09-30
+Waste Generated in Operations-Steel Slag Disposal,tCO2/t,1573.376,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Business Travel-Air Travel,tCO2/km,86.1167646,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Purchased Goods and Services-DRI (from supplier),tCO2/t,81481.4775,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Employee Commuting-Bus/Car Travel,tCO2/km,123.1290948,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Upstream Transportation and Distribution-Inbound logistics,tCO2/t-km,3776.415766,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Use of Sold Products-Vehicles made from steel,tCO2/units,146162.896,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Fuel- and Energy-Related Activities-Fuel extraction & transport,tCO2/GJ,21472.9222,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Capital Goods-Equipment & Infrastructure,tCO2/INR,1029.471524,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Downstream Transportation and Distribution-Outbound logistics,tCO2/t-km,3100.353212,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Purchased Goods and Services-EAF Electrodes,tCO2/t,4378.269,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Purchased Goods and Services-Iron Ore,tCO2/t,190015.7544,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+End-of-Life Treatment of Sold Products-Scrap recovery & recycling,tCO2/t,18161.155,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Downstream Investments-Operated facilities (leased),tCO2,114616.69,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Processing of Sold Products-Automotive parts,tCO2/t,223093.625,GHG Protocol Scope 3 Eval Tool,2024-01-01,2024-03-31
+Purchased Goods and Services-Alloying Elements,tCO2/t,16686.27,GHG Protocol Scope 3 Eval Tool,2024-04-01,2024-06-30

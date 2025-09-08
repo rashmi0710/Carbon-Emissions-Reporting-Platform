@@ -1,10 +1,10 @@
 from fastapi import FastAPI, Depends, HTTPException
-from contextlib import asynccontextmanager
 from sqlalchemy.orm import Session
-from typing import List
-from models import DirectEmission, EnergyEmission, ValueChainEmission
+from contextlib import asynccontextmanager
+from typing import List, Optional
+from models import EmissionFactor, EmissionRecord, BusinessMetric
 from database import SessionLocal, engine, Base
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 import datetime
 
 @asynccontextmanager
@@ -24,84 +24,186 @@ def get_db():
         db.close()
 
 # ------------------------------
-# Pydantic Schemas (with auto id, start_date, end_date)
+# Pydantic Schemas
 # ------------------------------
-class DirectEmissionSchema(BaseModel):
-    section: str
-    material: str
+
+class EmissionFactorSchema(BaseModel):
+    activity: str
+    unit: str
+    co2e_value: float
+    source: Optional[str] = None
+    valid_from: datetime.date
+    valid_to: datetime.date
+
+    class Config:
+        from_attributes = True
+
+class EmissionFactorOutSchema(EmissionFactorSchema):
+    id: int
+
+class EmissionRecordSchema(BaseModel):
+    scope: str = Field(..., pattern="^(Scope1|Scope2)$")
+    activity: str
     unit: str
     quantity: float
-    emission_factor: float
-    emission_factor_unit: str | None = None
+    recorded_at: datetime.date
+    location: Optional[str] = None
+    user_id: Optional[int] = None
+
+    class Config:
+        from_attributes = True
+
+class EmissionRecordOutSchema(EmissionRecordSchema):
+    id: int
+    emission_factor_id: int
     ghg_emission: float
-    location: str | None = None
-    start_date: datetime.date
-    end_date: datetime.date
+
+class BusinessMetricSchema(BaseModel):
+    metric_date: datetime.date
+    metric_name: str
+    value: float
 
     class Config:
         from_attributes = True
 
-class DirectEmissionOutSchema(DirectEmissionSchema):
-    id: int
-
-class EnergyEmissionSchema(BaseModel):
-    section: str
-    material: str
-    unit: str
-    quantity: float
-    emission_factor: float
-    ghg_emission: float
-    location: str | None = None
-    start_date: datetime.date
-    end_date: datetime.date
-
-    class Config:
-        from_attributes = True
-
-class EnergyEmissionOutSchema(EnergyEmissionSchema):
-    id: int
-
-class ValueChainEmissionSchema(BaseModel):
-    section: str | None = None
-    material: str | None = None
-    unit: str | None = None
-    quantity: float | None = None
-    emission_factor: float | None = None
-    ghg_emission: float | None = None
-    start_date: datetime.date | None = None
-    end_date: datetime.date | None = None
-
-    class Config:
-        from_attributes = True
-
-class ValueChainEmissionOutSchema(ValueChainEmissionSchema):
+class BusinessMetricOutSchema(BusinessMetricSchema):
     id: int
 
 # ------------------------------
-# CRUD Endpoints - Scope 1
+# EmissionFactor CRUD
 # ------------------------------
-@app.post("/scope1/", response_model=DirectEmissionOutSchema)
-def create_scope1_emission(item: DirectEmissionSchema, db: Session = Depends(get_db)):
-    emission = DirectEmission(**item.model_dump())
-    db.add(emission)
+@app.post("/factors/", response_model=EmissionFactorOutSchema)
+def create_emission_factor(item: EmissionFactorSchema, db: Session = Depends(get_db)):
+    factor = EmissionFactor(**item.model_dump())
+    db.add(factor)
     db.commit()
-    db.refresh(emission)
-    return emission
+    db.refresh(factor)
+    return factor
 
-@app.get("/scope1/", response_model=List[DirectEmissionOutSchema])
-def list_scope1_emissions(db: Session = Depends(get_db)):
-    return db.query(DirectEmission).all()
+@app.get("/factors/", response_model=List[EmissionFactorOutSchema])
+def list_emission_factors(db: Session = Depends(get_db)):
+    return db.query(EmissionFactor).all()
 
-@app.get("/scope1/{emission_id}", response_model=DirectEmissionOutSchema)
-def get_scope1_emission(emission_id: int, db: Session = Depends(get_db)):
-    emission = db.query(DirectEmission).filter(DirectEmission.id == emission_id).first()
+@app.get("/factors/{factor_id}", response_model=EmissionFactorOutSchema)
+def get_emission_factor(factor_id: int, db: Session = Depends(get_db)):
+    factor = db.query(EmissionFactor).filter(EmissionFactor.id == factor_id).first()
+    if not factor:
+        raise HTTPException(status_code=404, detail="Factor not found")
+    return factor
+
+@app.delete("/factors/{factor_id}")
+def delete_emission_factor(factor_id: int, db: Session = Depends(get_db)):
+    factor = db.query(EmissionFactor).filter(EmissionFactor.id == factor_id).first()
+    if not factor:
+        raise HTTPException(status_code=404, detail="Factor not found")
+    db.delete(factor)
+    db.commit()
+    return {"detail": "Deleted"}
+
+# ------------------------------
+# BusinessMetric CRUD
+# ------------------------------
+@app.post("/metrics/", response_model=BusinessMetricOutSchema)
+def create_metric(item: BusinessMetricSchema, db: Session = Depends(get_db)):
+    metric = BusinessMetric(**item.model_dump())
+    db.add(metric)
+    db.commit()
+    db.refresh(metric)
+    return metric
+
+@app.get("/metrics/", response_model=List[BusinessMetricOutSchema])
+def list_metrics(db: Session = Depends(get_db)):
+    return db.query(BusinessMetric).all()
+
+@app.get("/metrics/{metric_id}", response_model=BusinessMetricOutSchema)
+def get_metric(metric_id: int, db: Session = Depends(get_db)):
+    metric = db.query(BusinessMetric).filter(BusinessMetric.id == metric_id).first()
+    if not metric:
+        raise HTTPException(status_code=404, detail="Metric not found")
+    return metric
+
+@app.delete("/metrics/{metric_id}")
+def delete_metric(metric_id: int, db: Session = Depends(get_db)):
+    metric = db.query(BusinessMetric).filter(BusinessMetric.id == metric_id).first()
+    if not metric:
+        raise HTTPException(status_code=404, detail="Metric not found")
+    db.delete(metric)
+    db.commit()
+    return {"detail": "Deleted"}
+
+# ------------------------------
+# EmissionRecord CRUD (Scope 1 & 2)
+# ------------------------------
+def get_valid_factor(db: Session, activity: str, unit: str, recorded_at: datetime.date):
+    return db.query(EmissionFactor).filter(
+        EmissionFactor.activity == activity,
+        EmissionFactor.unit == unit,
+        EmissionFactor.valid_from <= recorded_at,
+        EmissionFactor.valid_to >= recorded_at
+    ).first()
+
+@app.post("/scope1/", response_model=EmissionRecordOutSchema)
+def create_scope1_emission(item: EmissionRecordSchema, db: Session = Depends(get_db)):
+    if item.scope != "Scope1":
+        raise HTTPException(status_code=400, detail="Scope must be 'Scope1'")
+    factor = get_valid_factor(db, item.activity, item.unit, item.recorded_at)
+    if not factor:
+        raise HTTPException(status_code=404, detail="Valid emission factor not found.")
+    ghg_emission = item.quantity * factor.co2e_value
+    record = EmissionRecord(
+        scope="Scope1",
+        activity=item.activity,
+        unit=item.unit,
+        quantity=item.quantity,
+        emission_factor_id=factor.id,
+        ghg_emission=ghg_emission,
+        recorded_at=item.recorded_at,
+        location=item.location,
+        user_id=item.user_id
+    )
+    db.add(record)
+    db.commit()
+    db.refresh(record)
+    return record
+
+@app.post("/scope2/", response_model=EmissionRecordOutSchema)
+def create_scope2_emission(item: EmissionRecordSchema, db: Session = Depends(get_db)):
+    if item.scope != "Scope2":
+        raise HTTPException(status_code=400, detail="Scope must be 'Scope2'")
+    factor = get_valid_factor(db, item.activity, item.unit, item.recorded_at)
+    if not factor:
+        raise HTTPException(status_code=404, detail="Valid emission factor not found.")
+    ghg_emission = item.quantity * factor.co2e_value
+    record = EmissionRecord(
+        scope="Scope2",
+        activity=item.activity,
+        unit=item.unit,
+        quantity=item.quantity,
+        emission_factor_id=factor.id,
+        ghg_emission=ghg_emission,
+        recorded_at=item.recorded_at,
+        location=item.location,
+        user_id=item.user_id
+    )
+    db.add(record)
+    db.commit()
+    db.refresh(record)
+    return record
+
+@app.get("/emissions/", response_model=List[EmissionRecordOutSchema])
+def list_emissions(db: Session = Depends(get_db)):
+    return db.query(EmissionRecord).all()
+
+@app.get("/emissions/{emission_id}", response_model=EmissionRecordOutSchema)
+def get_emission(emission_id: int, db: Session = Depends(get_db)):
+    emission = db.query(EmissionRecord).filter(EmissionRecord.id == emission_id).first()
     if not emission:
         raise HTTPException(status_code=404, detail="Emission not found")
     return emission
 
-@app.delete("/scope1/{emission_id}")
-def delete_scope1_emission(emission_id: int, db: Session = Depends(get_db)):
-    emission = db.query(DirectEmission).filter(DirectEmission.id == emission_id).first()
+@app.delete("/emissions/{emission_id}")
+def delete_emission(emission_id: int, db: Session = Depends(get_db)):
+    emission = db.query(EmissionRecord).filter(EmissionRecord.id == emission_id).first()
     if not emission:
         raise HTTPException(status_code=404, detail="Emission not found")
     db.delete(emission)
@@ -109,64 +211,29 @@ def delete_scope1_emission(emission_id: int, db: Session = Depends(get_db)):
     return {"detail": "Deleted"}
 
 # ------------------------------
-# Scope 2
+# Emission Intensity Reporting
 # ------------------------------
-@app.post("/scope2/", response_model=EnergyEmissionOutSchema)
-def create_scope2_emission(item: EnergyEmissionSchema, db: Session = Depends(get_db)):
-    emission = EnergyEmission(**item.model_dump())
-    db.add(emission)
-    db.commit()
-    db.refresh(emission)
-    return emission
-
-@app.get("/scope2/", response_model=List[EnergyEmissionOutSchema])
-def list_scope2_emissions(db: Session = Depends(get_db)):
-    return db.query(EnergyEmission).all()
-
-@app.get("/scope2/{emission_id}", response_model=EnergyEmissionOutSchema)
-def get_scope2_emission(emission_id: int, db: Session = Depends(get_db)):
-    emission = db.query(EnergyEmission).filter(EnergyEmission.id == emission_id).first()
-    if not emission:
-        raise HTTPException(status_code=404, detail="Emission not found")
-    return emission
-
-
-@app.delete("/scope2/{emission_id}")
-def delete_scope2_emission(emission_id: int, db: Session = Depends(get_db)):
-    emission = db.query(EnergyEmission).filter(EnergyEmission.id == emission_id).first()
-    if not emission:
-        raise HTTPException(status_code=404, detail="Emission not found")
-    db.delete(emission)
-    db.commit()
-    return {"detail": "Deleted"}
-# ------------------------------
-# Scope 3
-# ------------------------------
-@app.post("/scope3/", response_model=ValueChainEmissionOutSchema)
-def create_scope3_emission(item: ValueChainEmissionSchema, db: Session = Depends(get_db)):
-    emission = ValueChainEmission(**item.model_dump())
-    db.add(emission)
-    db.commit()
-    db.refresh(emission)
-    return emission
-
-@app.get("/scope3/", response_model=List[ValueChainEmissionOutSchema])
-def list_scope3_emissions(db: Session = Depends(get_db)):
-    return db.query(ValueChainEmission).all()
-
-@app.get("/scope3/{emission_id}", response_model=ValueChainEmissionOutSchema)
-def get_scope3_emission(emission_id: int, db: Session = Depends(get_db)):
-    emission = db.query(ValueChainEmission).filter(ValueChainEmission.id == emission_id).first()
-    if not emission:
-        raise HTTPException(status_code=404, detail="Emission not found")
-    return emission
-
-
-@app.delete("/scope3/{emission_id}")
-def delete_scope3_emission(emission_id: int, db: Session = Depends(get_db)):
-    emission = db.query(ValueChainEmission).filter(ValueChainEmission.id == emission_id).first()
-    if not emission:
-        raise HTTPException(status_code=404, detail="Emission not found")
-    db.delete(emission)
-    db.commit()
-    return {"detail": "Deleted"}
+@app.get("/intensity/")
+def emission_intensity(metric_name: str, metric_date: datetime.date, db: Session = Depends(get_db)):
+    # Find total emissions for given date
+    total_ghg = db.query(EmissionRecord).filter(
+        EmissionRecord.recorded_at == metric_date
+    ).with_entities(
+        EmissionRecord.ghg_emission
+    )
+    total_ghg = sum([row.ghg_emission for row in total_ghg])
+    # Find metric value for given date
+    metric = db.query(BusinessMetric).filter(
+        BusinessMetric.metric_name == metric_name,
+        BusinessMetric.metric_date == metric_date
+    ).first()
+    if not metric or metric.value == 0:
+        raise HTTPException(status_code=404, detail="Business metric not found or zero value")
+    intensity = total_ghg / metric.value
+    return {
+        "metric_name": metric_name,
+        "metric_date": str(metric_date),
+        "total_ghg_emission": total_ghg,
+        "metric_value": metric.value,
+        "intensity": intensity  # kgCO2e per unit metric
+    }
