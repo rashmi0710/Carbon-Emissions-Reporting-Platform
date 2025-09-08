@@ -1,6 +1,6 @@
 # 🌍 Carbon Emissions Reporting Platform
 
-![System Architecture]([C:\Users\dongr\Downloads\power-forecasting\_- visual selection.png](https://github.com/rashmi0710/Carbon-Emissions-Reporting-Platform/blob/main/_-%20visual%20selection.png))  
+![System Architecture]([C:\Users\dongr\Downloads\power-forecasting\_- visual selection.png](https://github.com/rashmi0710/Carbon-Emissions-Reporting-Platform/blob/main/_-%20visual%20selection.png)  
 
 
 A **FastAPI + React + MySQL** based platform to calculate and monitor **Scope 1 & Scope 2 GHG emissions (tCO₂)**.  
@@ -26,4 +26,5 @@ flowchart TD
     C -->|SQLAlchemy| D[(MySQL Database)]
     C -->|Calculations| E[Analytics Engine]
     E -->|Charts & Reports| B
+
 
