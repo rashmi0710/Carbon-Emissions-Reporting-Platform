@@ -2,94 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add this in app.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+}
+
 
 /* Background container */
 .app-container {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to bottom right, #064e3b, #065f46, #047857, #059669, #10b981);
-}
+  background: linear-gradient(to bottom right, #0d1b2a, #1a4d2e, #2d6a4f, #95d5b2);
 
-/* CO₂ bubbles */
-.co2-background {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+
 }
 
 .co2-bubble {
   position: absolute;
-  width: 22px;   /* increased */
-  height: 22px;  /* increased */
+  width: 3rem;
+  height: 3rem;
   background: #d1d5db;
   border-radius: 50%;
   opacity: 0.5;
-  animation: bounce 3s infinite;
+  animation: float 10s infinite ease-in-out;
+  border: 2px solid black; /* Add black border */
 }
 
 .co2-label {
   position: absolute;
   top: -6px;   /* adjust label position slightly */
   left: -12px; /* adjust for bigger bubble */
-  font-size: 11px;  /* a bit larger */
+  font-size: 2rem;  /* a bit larger */
   color: white;
   font-weight: bold;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: 1px black; /* Black stroke border */
+  text-stroke: 1px black; /* For supported browsers */
 }
 
 
-/* Main content */
-.main-content {
-  position: relative;
-  z-index: 20;
-  padding: 24px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
 
-.content-wrapper {
-  max-width: 900px;
-  width: 100%;
-}
 
-/* Header box */
-.header-box {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(8px);
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 24px;
-  border: 1px solid rgba(74, 222, 128, 0.3);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-
-.header-title {
-  color: white;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-}
-
-.header-subtitle {
-  color: #bbf7d0;
-  opacity: 0.9;
-  font-size: 16px;
-}
 
 
 
 /* Animations */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -20px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translate(-15px, -40px);
+  }
+  75% {
+    transform: translate(20px, -60px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
+

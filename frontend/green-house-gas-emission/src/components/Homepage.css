@@ -1,0 +1,107 @@
+/* Container and Background */
+.homePage {
+  min-height: 100vh;
+  padding-top: 24px;    /* increased top padding for some gap */
+  padding-bottom: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* align dashboard towards top */
+  background: linear-gradient(to bottom right, #1a1a19, #31511e, #4d7c0f, #d9f99d);
+}
+
+/* Dashboard card/container */
+.container {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  padding: 28px;         /* increased padding */
+  border: 1.5px solid #7c3aed;
+  min-height: 320px;     /* increased min height */
+  margin-top: 0;
+}
+
+/* Title */
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  margin-bottom: 14px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #d8b4fe;
+  margin-bottom: 36px;
+}
+
+/* Cards container */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;            /* medium gap */
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+/* Individual card */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 15px rgba(124, 58, 237, 0.35);
+  flex: 1 1 44%;
+  max-width: 44%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #5b21b6;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7c3aed;
+  margin-top: 4px;
+}
+
+/* Latest Metric */
+.latestMetric {
+  background: rgba(124, 58, 237, 0.45);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 15px rgba(124, 58, 237, 0.35);
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.latestMetric h3 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.latestMetric p {
+  font-size: 1.1rem;
+}
