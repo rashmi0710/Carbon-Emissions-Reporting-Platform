@@ -1,0 +1,76 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 32px auto 0 auto;
+  padding: 0 16px 32px 16px;
+  background: transparent;
+}
+
+.dashboard-title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2c1360;
+  letter-spacing: 1.2px;
+  margin-bottom: 24px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 32px;
+}
+
+/* Chart Card Styles */
+.dashboard-card {
+  background: rgba(255,255,255,0.92);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+  padding: 32px 24px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* For Intensity Card, special background */
+.dashboard-card.intensity-card {
+  background: linear-gradient(105deg, #7c3aed 80%, #38a169 100%);
+  color: white;
+}
+
+.dashboard-card h3 {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #321e81;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-card.intensity-card h3 {
+  color: #fff;
+}
+
+.dashboard-card p,
+.dashboard-card pre {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.dashboard-card.intensity-card p {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #fff;
+  margin-top: 16px;
+}
+
+/* Responsive tweak for mobile */
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .dashboard-card {
+    padding: 18px 8px;
+    min-height: 120px;
+  }
+}
