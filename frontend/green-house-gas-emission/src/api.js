@@ -11,10 +11,10 @@ export async function fetchYoYData() {
 }
 
 // Fetch Trend data
-export async function fetchTrendData() {
-  const res = await api.get('/analytics/trend');
-  return res.data;
-}
+// export async function fetchTrendData() {
+//   const res = await api.get('/analytics/trend');
+//   return res.data;
+// }
 
 // Fetch Hotspot emissions data
 export const fetchHotspotData = async () => {

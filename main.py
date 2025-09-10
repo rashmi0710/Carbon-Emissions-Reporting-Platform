@@ -253,30 +253,35 @@ def emission_hotspots(limit: int = 5, db: Session = Depends(get_db)):
     )
     return [{"activity": r.activity, "total_emission": r.total_emission} for r in results]
 
-@app.get("/analytics/trend")
-def emission_trend(scope: Optional[str] = None, db: Session = Depends(get_db)):
-    """Emissions trend over time (monthly) with yyyy-mm-dd format"""
-    query = db.query(
-        extract("year", EmissionRecord.recorded_at).label("year"),
-        extract("month", EmissionRecord.recorded_at).label("month"),
-        func.sum(EmissionRecord.ghg_emission).label("total")
-    )
-    if scope:
-        query = query.filter(EmissionRecord.scope == scope)
-
-    results = (
-        query.group_by("year", "month")
-        .order_by("year", "month")
-        .all()
-    )
-
-    return [
-        {
-            "date": datetime.date(int(r.year), int(r.month), 1).strftime("%Y-%m-%d"),
-            "total": float(r.total)
-        }
-        for r in results
-    ]
+# @app.get("/analytics/trend")
+# def emission_trend(scope: Optional[str] = None, db: Session = Depends(get_db)):
+#     """Emissions trend over time (monthly) with yyyy-mm-dd format"""
+    
+#     year_expr = extract("year", EmissionRecord.recorded_at)
+#     month_expr = extract("month", EmissionRecord.recorded_at)
+    
+#     query = db.query(
+#         year_expr.label("year"),
+#         month_expr.label("month"),
+#         func.sum(EmissionRecord.ghg_emission).label("total")
+#     )
+    
+#     if scope:
+#         query = query.filter(EmissionRecord.scope == scope)
+    
+#     results = (
+#         query.group_by(year_expr, month_expr)
+#              .order_by(year_expr, month_expr)
+#              .all()
+#     )
+    
+#     return [
+#         {
+#             "date": datetime.date(int(r.year), int(r.month), 1).strftime("%Y-%m-%d"),
+#             "total": float(r.total)
+#         }
+#         for r in results
+#     ]
 
 # ------------------------------
 # Emission Intensity Endpoint

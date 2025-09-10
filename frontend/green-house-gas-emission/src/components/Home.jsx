@@ -2,7 +2,7 @@ import React from "react";
 import YoYBarChart from "../components/charts/YoYBarChart";
 import HotspotDonut from "../components/charts/HotspotDonut";
 // import IntensityCard from "../components/charts/IntensityCard";
-import EmissionTrendLine from "../components/charts/EmissionTrendLine";
+// import EmissionTrendLine from "../components/charts/EmissionTrendLine";
 import "./Dashboard.css";
 
 const Dashboard = () => {
@@ -19,9 +19,9 @@ const Dashboard = () => {
         {/* <div className="dashboard-card intensity-card">
           <IntensityCard />
         </div> */}
-        <div className="dashboard-card">
+        {/* <div className="dashboard-card">
           <EmissionTrendLine />
-        </div>
+        </div> */}
       </div>
     </div>
   );
