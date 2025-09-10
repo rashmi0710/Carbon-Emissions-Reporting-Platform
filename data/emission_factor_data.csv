@@ -1,0 +1,85 @@
+id,activity,unit,co2e_value,source,valid_from,valid_to
+1,Oil,KL,2.826,IPCC 2006 Guidelines,2006-01-01,2026-12-31
+2,Non condensable Gases,tonnes,0.069,IPCC 2006 Guidelines,2006-01-01,2027-01-01
+3,Combustible Resue,KL,2.779,IPCC 2006 Guidelines,2006-01-01,2027-01-02
+4,Industrial Grease,Nm3,0.787,IPCC 2006 Guidelines,2006-01-01,2027-01-03
+5,Anthracite Coal,tonnes,1.044,IPCC 2006 Guidelines,2006-04-01,2027-01-04
+6,Iron Scrap,KL,2.849,IPCC 2006 Guidelines,2006-04-01,2027-01-05
+7,Petroleum Coke,KL,1.39,IPCC 2006 Guidelines,2006-04-01,2027-01-06
+8,Bituminous Coal,KL,3.084,IPCC 2006 Guidelines,2006-04-01,2027-01-07
+9,Calcined Petroleum Coke,tonnes,2.036,IPCC 2006 Guidelines,2006-04-01,2027-01-08
+10,Limestone,tonnes,3.087,IPCC 2006 Guidelines,2006-04-01,2027-01-09
+11,Natural Gas,tonnes,2.425,IPCC 2006 Guidelines,2006-04-01,2027-01-10
+12,Fuel Oil,tonnes,2.539,IPCC 2006 Guidelines,2006-04-01,2027-01-11
+13,Diesel,tonnes,1.757,IPCC 2006 Guidelines,2006-04-01,2027-01-12
+14,LPG,tonnes,3.346,IPCC 2006 Guidelines,2006-04-01,2027-01-13
+15,Kerosene,KL,2.255,IPCC 2006 Guidelines,2006-04-01,2027-01-14
+16,Low Carbon Steel,tonnes,1.486,IPCC 2006 Guidelines,2006-04-01,2027-01-15
+17,Ferrochrome,Nm3,2.124,IPCC 2006 Guidelines,2006-04-01,2027-01-16
+18,Ferro Manganese,Nm3,0.071,IPCC 2006 Guidelines,2006-04-01,2027-01-17
+19,Ferro Silicon,KL,1.058,IPCC 2006 Guidelines,2006-04-01,2027-01-18
+20,Silico Manganese,KL,2.312,IPCC 2006 Guidelines,2006-04-01,2027-01-19
+21,Coke Oven Gas,KL,1.018,IPCC 2006 Guidelines,2006-04-01,2027-01-20
+22,Blast Furnace Gas,Nm3,2.165,IPCC 2006 Guidelines,2006-04-01,2027-01-21
+23,BOF Gas,KL,1.503,IPCC 2006 Guidelines,2006-04-01,2027-01-22
+24,Coal Tar,KL,0.478,IPCC 2006 Guidelines,2006-04-01,2027-01-23
+25,Pitch,tonnes,1.047,IPCC 2006 Guidelines,2006-04-01,2027-01-24
+26,EAF Electrodes,KL,1.997,IPCC 2006 Guidelines,2006-04-01,2027-01-25
+27,Dolomite,Nm3,2.07,IPCC 2006 Guidelines,2006-04-01,2027-01-26
+28,Crude Dolomite,KL,2.012,IPCC 2006 Guidelines,2006-04-01,2027-01-27
+29,HFO,KL,2.288,IPCC 2006 Guidelines,2006-04-01,2027-01-28
+30,Lubricating Oil,tonnes,2.284,IPCC 2006 Guidelines,2006-04-01,2027-01-29
+31,Hydraulic Oil,tonnes,1.512,IPCC 2006 Guidelines,2006-04-01,2027-01-30
+32,Transformer Oil,KL,3.138,IPCC 2006 Guidelines,2006-04-01,2027-01-31
+33,Ethylene,KL,1.289,IPCC 2006 Guidelines,2006-04-01,2027-02-01
+34,Methane,Nm3,1.528,IPCC 2006 Guidelines,2006-04-01,2027-02-02
+35,Acetylene,KL,3.122,IPCC 2006 Guidelines,2006-04-01,2027-02-03
+36,Oxygen,Nm3,2.822,IPCC 2006 Guidelines,2006-04-01,2027-02-04
+37,Argon,Nm3,2.465,IPCC 2006 Guidelines,2006-04-01,2027-02-05
+38,Nitrogen,KL,0.354,IPCC 2006 Guidelines,2006-04-01,2027-02-06
+39,Ammonia,Nm3,3.219,IPCC 2006 Guidelines,2006-04-01,2027-02-07
+40,Propane,Nm3,2.501,IPCC 2006 Guidelines,2006-04-01,2027-02-08
+41,Biomass Briquettes,tonnes,3.496,IPCC 2006 Guidelines,2006-04-01,2027-02-09
+42,Charcoal,KL,0.526,IPCC 2006 Guidelines,2006-04-01,2027-02-10
+43,Plastic Waste Fuel,KL,3.039,IPCC 2006 Guidelines,2006-04-01,2027-02-11
+44,Wood Chips,KL,0.572,IPCC 2006 Guidelines,2006-04-01,2027-02-12
+45,Firewood,Nm3,2.156,IPCC 2006 Guidelines,2006-04-01,2027-02-13
+46,Carbon Black,KL,0.437,IPCC 2006 Guidelines,2006-04-01,2027-02-14
+47,Steel Scrap,KL,2.969,IPCC 2006 Guidelines,2006-04-01,2027-02-15
+48,Spent Solvents,Nm3,1.994,IPCC 2006 Guidelines,2006-04-01,2027-02-16
+49,Waste Lubricants,tonnes,1.428,IPCC 2006 Guidelines,2006-04-01,2027-02-17
+50,High Speed Diesel,KL,0.246,IPCC 2006 Guidelines,2006-04-01,2027-02-18
+51,Mineral Turpentine Oil,tonnes,2.442,IPCC 2006 Guidelines,2006-04-01,2027-02-19
+52,Glycerine,KL,1.59,IPCC 2006 Guidelines,2006-04-01,2027-02-20
+53,Process Gas Mix,KL,2.528,IPCC 2006 Guidelines,2006-04-01,2027-02-21
+54,Producer Gas,Nm3,3.033,IPCC 2006 Guidelines,2006-04-01,2027-02-22
+55,Sponge Iron,tonnes,3.414,IPCC 2006 Guidelines,2006-04-01,2027-02-23
+56,Mill Scale,Nm3,2.996,IPCC 2006 Guidelines,2006-04-01,2027-02-24
+57,Hot Metal,tonnes,0.045,IPCC 2006 Guidelines,2006-04-01,2027-02-25
+58,Refractory Waste,Nm3,1.262,IPCC 2006 Guidelines,2006-04-01,2027-02-26
+59,Carbon Paste,tonnes,2.556,IPCC 2006 Guidelines,2006-04-01,2027-02-27
+60,Waste Tyres,Nm3,0.604,IPCC 2006 Guidelines,2006-04-01,2027-02-28
+61,Used Oils,tonnes,1.826,IPCC 2006 Guidelines,2006-04-01,2027-03-01
+62,Coolant Flus,tonnes,0.194,IPCC 2006 Guidelines,2006-04-01,2027-03-02
+63,Sludge Cake,tonnes,0.703,IPCC 2006 Guidelines,2006-04-01,2027-03-03
+64,Electricity,kWh,0.8,CEA India 2023 Report,2023-01-01,2027-03-04
+65,Electricity,kWh,0.6,CEA India 2023 Report,2023-01-01,2027-03-05
+66,Steam,GJ,0.2,CEA India 2023 Report,2023-01-01,2027-03-06
+67,Electricity,kWh,0.85,CEA India 2023 Report,2023-01-01,2027-03-07
+68,Electricity,kWh,0.71,CEA India 2023 Report,2023-04-01,2027-03-08
+69,Electricity,kWh,0.8,CEA India 2023 Report,2023-07-01,2027-03-09
+70,Disposal,tonnes,1573.38,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-10
+71,Travel,km,86.1168,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-11
+72,Goods,tonnes,81481.5,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-12
+73,Travel,km,123.129,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-13
+74,Goods and Travel,tonnes-km,3776.42,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-14
+75,Goods and Travel,units,146163,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-15
+76,Goods and Travel,GJ,21472.9,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-16
+77,Goods and Travel,INR,1029.47,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-17
+78,Goods and Travel,tonnes-km,3100.35,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-18
+79,Goods and Services,tonnes,4378.27,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-19
+80,Goods and Services,tonnes,190016,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-20
+81,recycling,tonnes,18161.2,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-21
+82,Services,tCO2,114617,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-22
+83,Goods,tonnes,223094,GHG Protocol Scope 3 Eval Tool,2024-01-01,2027-03-23
+84,Goods,tonnes,16686.3,GHG Protocol Scope 3 Eval Tool,2024-04-01,2027-03-24
