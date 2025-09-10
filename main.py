@@ -1,7 +1,7 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from sqlalchemy import extract, func, desc
+from sqlalchemy import extract, func, desc, text
 from contextlib import asynccontextmanager
 from typing import List, Optional
 from models import EmissionFactor, EmissionRecord, BusinessMetric, AuditLog
@@ -10,6 +10,7 @@ from pydantic import BaseModel, Field
 from sqlalchemy import and_ 
 import datetime
 from typing import List
+
 
 # ------------------------------
 # App & Middleware
@@ -100,6 +101,13 @@ class AuditLogSchema(BaseModel):
 
 class AuditLogOutSchema(AuditLogSchema):
     id: int
+
+class IntensityResponse(BaseModel):
+    intensity: float
+    metric_name: str
+    period: str
+    total_ghg_emission: float
+    metric_value: float
 
 # ------------------------------
 # Utility
@@ -247,7 +255,7 @@ def emission_hotspots(limit: int = 5, db: Session = Depends(get_db)):
 
 @app.get("/analytics/trend")
 def emission_trend(scope: Optional[str] = None, db: Session = Depends(get_db)):
-    """Emissions trend over time (monthly) with yyyy-dd-mm format"""
+    """Emissions trend over time (monthly) with yyyy-mm-dd format"""
     query = db.query(
         extract("year", EmissionRecord.recorded_at).label("year"),
         extract("month", EmissionRecord.recorded_at).label("month"),
@@ -264,11 +272,64 @@ def emission_trend(scope: Optional[str] = None, db: Session = Depends(get_db)):
 
     return [
         {
-            "date": datetime.date(int(r.year), int(r.month), 1).strftime("%Y-%d-%m"),  
-            "total": r.total
+            "date": datetime.date(int(r.year), int(r.month), 1).strftime("%Y-%m-%d"),
+            "total": float(r.total)
         }
         for r in results
     ]
+
+# ------------------------------
+# Emission Intensity Endpoint
+# ------------------------------
+
+# @app.get("/analytics/intensity", response_model=IntensityResponse)
+# def calculate_intensity(
+#     start_date: Optional[str] = Query(None, description="Start date (yyyy-mm-dd)"),
+#     end_date: Optional[str] = Query(None, description="End date (yyyy-mm-dd)")
+# ):
+#     """
+#     Calculates emission intensity = total_ghg_emission / total_quantity
+#     from emission_record table.
+#     """
+
+#     query = "SELECT quantity, ghg_emission, unit, recorded_at FROM emission_record"
+#     conditions = []
+
+#     if start_date:
+#         conditions.append(f"date(recorded_at) >= date('{start_date}')")
+#     if end_date:
+#         conditions.append(f"date(recorded_at) <= date('{end_date}')")
+
+#     if conditions:
+#         query += " WHERE " + " AND ".join(conditions)
+
+#     with engine.connect() as conn:
+#         rows = conn.execute(text(query)).fetchall()
+
+#     if not rows:
+#         raise HTTPException(status_code=404, detail="No emission records found for given period")
+
+#     total_emission = sum([row[1] for row in rows if row[1]])
+#     total_quantity = sum([row[0] for row in rows if row[0]])
+
+#     if total_quantity == 0:
+#         raise HTTPException(status_code=400, detail="Total quantity is zero, cannot calculate intensity")
+
+#     intensity = total_emission / total_quantity
+
+#     metric_name = rows[0][2]  # use first row's unit for display
+#     period = f"{start_date or 'ALL'} to {end_date or 'ALL'}"
+
+#     return {
+#         "intensity": intensity,
+#         "metric_name": metric_name,
+#         "period": period,
+#         "total_ghg_emission": total_emission,
+#         "metric_value": total_quantity
+#     }
+
+
+
 
 
 
@@ -278,30 +339,7 @@ def get_all_audit_logs(db: Session = Depends(get_db)):
     return logs
 
 
-# ------------------------------
-# Emission Intensity
-# ------------------------------
-@app.get("/intensity/")
-def emission_intensity(metric_name: str, metric_date: datetime.date, db: Session = Depends(get_db)):
-    total_ghg = db.query(EmissionRecord).filter(
-        EmissionRecord.recorded_at == metric_date
-    ).with_entities(func.sum(EmissionRecord.ghg_emission)).scalar() or 0
 
-    metric = db.query(BusinessMetric).filter(
-        BusinessMetric.metric_name == metric_name,
-        BusinessMetric.metric_date == metric_date
-    ).first()
-    if not metric or metric.value == 0:
-        raise HTTPException(status_code=404, detail="Business metric not found or zero value")
-
-    intensity = total_ghg / metric.value
-    return {
-        "metric_name": metric_name,
-        "metric_date": str(metric_date),
-        "total_ghg_emission": total_ghg,
-        "metric_value": metric.value,
-        "intensity": intensity
-    }
 
 
 @app.get("/analytics/historical")
