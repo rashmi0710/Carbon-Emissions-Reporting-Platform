@@ -1,0 +1,34 @@
+.auditlog-container {
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.auditlog-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.auditlog-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.auditlog-table th,
+.auditlog-table td {
+  border: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.auditlog-table th {
+  background-color: #f1f5f9;
+  font-weight: bold;
+}
+
+.auditlog-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}

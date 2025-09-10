@@ -9,7 +9,7 @@ import Background from "./Background";
 import Home from "./components/Home";
 import AddEmissionForm from "./components/AddEmissionForm";
 import BusinessMetricForm from "./components/BusinessMetricForm";
-// import AuditLogs from "./components/AuditLogs"; // ✅ you'll need to create this component
+import AuditLogs from "./components/AuditLogs";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
           <Route path="/metrics" element={<BusinessMetricForm />} />
 
           {/* Audit Logs Page */}
-          {/* <Route path="/audit" element={<AuditLogs />} /> */}
+          <Route path="/audit" element={<AuditLogs />} />
         </Routes>
       </div>
     </div>

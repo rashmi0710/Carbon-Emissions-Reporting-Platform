@@ -11,14 +11,16 @@ const BusinessMetricForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Convert "value" to number if not empty
+    // Convert "value" field to number safely
     if (name === "value") {
       setFormData({ ...formData, [name]: value === "" ? "" : Number(value) });
     } else {
       setFormData({ ...formData, [name]: value });
     }
 
-    console.log("Form Data:", { ...formData, [name]: value }); // debug
+    if (process.env.NODE_ENV === "development") {
+      console.log("Form Data:", { ...formData, [name]: value });
+    }
   };
 
   const handleSubmit = async (e) => {

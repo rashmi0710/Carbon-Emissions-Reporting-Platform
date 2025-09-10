@@ -26,7 +26,8 @@ const AddEmissionForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const endpoint = formData.scope === "Scope1" ? "/scope1/" : "/scope2/";
+    const endpoint = `/${formData.scope.toLowerCase()}/`;
+
 
     try {
       const response = await fetch(`http://localhost:8000${endpoint}`, {
