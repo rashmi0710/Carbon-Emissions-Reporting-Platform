@@ -2,11 +2,12 @@ version: 1.0.0
 
 endpoints:
   - name: emission-api
+    type: web
     runtime:
       type: python
       version: "3.10"
 
-    entrypoint: uvicorn mains:app --host 0.0.0.0 --port 8000 --reload
+    command: uvicorn mains:app --host 0.0.0.0 --port 8000
 
     dependencies:
       - file: requirements.txt
