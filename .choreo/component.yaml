@@ -1,0 +1,25 @@
+version: 1.0.0
+
+endpoints:
+  - name: emission-api
+    runtime:
+      type: python
+      version: "3.10"
+
+    entrypoint: uvicorn mains:app --host 0.0.0.0 --port 8000 --reload
+
+    dependencies:
+      - file: requirements.txt
+
+    ports:
+      - 8000
+
+    healthcheck:
+      path: /docs
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+    resources:
+      cpu: 500m
+      memory: 512Mi
