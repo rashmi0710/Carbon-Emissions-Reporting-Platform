@@ -6,15 +6,9 @@ source:
   branch: main
 build:
   commands:
-    - pip install --no-cache-dir -r requirements.txt
+    - pip install -r requirements.txt
 run:
-  command:
-    - uvicorn
-    - main:app
-    - --host
-    - 0.0.0.0
-    - --port
-    - $PORT
+  command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]
   env:
     - name: PORT
       value: "8000"
