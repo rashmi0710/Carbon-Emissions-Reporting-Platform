@@ -7,6 +7,7 @@ from typing import List, Optional
 from models import EmissionFactor, EmissionRecord, BusinessMetric, AuditLog
 from database import SessionLocal, engine, Base
 from pydantic import BaseModel, Field
+from sqlalchemy import and_ 
 import datetime
 from typing import List
 
