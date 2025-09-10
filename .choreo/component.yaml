@@ -1,26 +1,11 @@
-version: 1.0.0
-
+schemaVersion: "1.2"
 endpoints:
   - name: emission-api
-    type: web
-    runtime:
-      type: python
-      version: "3.10"
-
-    command: uvicorn main:app --host 0.0.0.0 --port 8000
-
-    dependencies:
-      - file: requirements.txt
-
-    ports:
-      - 8000
-
-    healthcheck:
-      path: /docs
-      interval: 10s
-      timeout: 3s
-      retries: 3
-
-    resources:
-      cpu: 500m
-      memory: 512Mi
+    displayName: REST API
+    service:
+      basePath: /
+      port: 8000
+      type: REST
+    networkVisibilities:
+      - Project
+      - Public
