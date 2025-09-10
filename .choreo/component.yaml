@@ -1,11 +1,14 @@
-schemaVersion: "1.2"
-endpoints:
-  - name: emission-api
-    displayName: REST API
-    service:
-      basePath: /
-      port: 8000
-      type: REST
-    networkVisibilities:
-      - Project
-      - Public
+componentName: backend-fastapi
+appType: service
+source:
+  type: git
+  repoUrl: https://github.com/rashmi0710/Carbon-Emissions-Reporting-Platform
+  branch: main
+build:
+  commands:
+    - pip install -r requirements.txt
+run:
+  command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]
+  env:
+    - name: PORT
+      value: "8000"
