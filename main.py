@@ -11,19 +11,31 @@ from sqlalchemy import and_
 import datetime
 from typing import List
 
+from contextlib import asynccontextmanager
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    Base.metadata.create_all(bind=engine)
+    print("✅ Tables created")
+    yield
+    print("👋 App shutting down")
+
+app = FastAPI(lifespan=lifespan)
 
 # ------------------------------
 # App & Middleware
 # ------------------------------
-app = FastAPI()
+
+
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # frontend origin
+    allow_origins=["http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -46,6 +58,7 @@ def get_db():
 # Pydantic Schemas
 # ------------------------------
 class EmissionFactorSchema(BaseModel):
+    id:int
     activity: str
     unit: str
     co2e_value: float
@@ -108,6 +121,8 @@ class IntensityResponse(BaseModel):
     period: str
     total_ghg_emission: float
     metric_value: float
+
+
 
 # ------------------------------
 # Utility
@@ -205,7 +220,22 @@ def create_emission(item: EmissionRecordSchema, db: Session = Depends(get_db)):
     db.add(record)
     db.commit()
     db.refresh(record)
+
+    # Create audit log entry for this creation event
+    audit_log_entry = AuditLog(
+        record_id=record.id,
+        field_name="creation",
+        old_value=None,
+        new_value=f"Created emission record with GHG emission {ghg_emission}",
+        changed_by=item.user_id,
+        changed_at=item.recorded_at,
+        reason="New emission record created"
+    )
+    db.add(audit_log_entry)
+    db.commit()
+
     return record
+
 
 @app.get("/emissions/", response_model=List[EmissionRecordOutSchema])
 def list_emissions(db: Session = Depends(get_db)):

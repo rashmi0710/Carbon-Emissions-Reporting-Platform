@@ -1,0 +1,85 @@
+id,scope,activity,unit,quantity,emission_factor_id,ghg_emission,recorded_at,location,user_id
+1,Scope1,Oil,KL,7853.68,1,22194.5,2006-01-01,Central Steel Plant,1001
+2,Scope1,Non condensable Gases,tonnes,40897700,2,2821940,2006-01-01,Central Steel Plant,1002
+3,Scope1,Combustible Resue,KL,8717.11,3,24224.8,2006-01-01,Central Steel Plant,1003
+4,Scope1,Industrial Grease,Nm3,143682,4,113078,2006-01-01,Central Steel Plant,1004
+5,Scope1,Anthracite Coal,tonnes,156844,5,163745,2006-04-01,Central Steel Plant,1005
+6,Scope1,Iron Scrap,KL,599044,6,1706680,2006-04-01,Central Steel Plant,1006
+7,Scope1,Petroleum Coke,KL,102899,7,143030,2006-04-01,Central Steel Plant,1007
+8,Scope1,Bituminous Coal,KL,276401,8,852419,2006-04-01,Central Steel Plant,1008
+9,Scope1,Calcined Petroleum Coke,tonnes,343875,9,700130,2006-04-01,Central Steel Plant,1009
+10,Scope1,Limestone,tonnes,117832,10,363748,2006-04-01,Central Steel Plant,1010
+11,Scope1,Natural Gas,tonnes,47600100,11,115430000,2006-04-01,Central Steel Plant,1011
+12,Scope1,Fuel Oil,tonnes,8311.25,12,21102.3,2006-04-01,Central Steel Plant,1012
+13,Scope1,Diesel,tonnes,3546.88,13,6231.87,2006-04-01,Central Steel Plant,1013
+14,Scope1,LPG,tonnes,166735,14,557894,2006-04-01,Central Steel Plant,1014
+15,Scope1,Kerosene,KL,8186.83,15,18461.3,2006-04-01,Central Steel Plant,1015
+16,Scope1,Low Carbon Steel,tonnes,15928.8,16,23670.2,2006-04-01,Central Steel Plant,1016
+17,Scope1,Ferrochrome,Nm3,133814,17,284222,2006-04-01,Central Steel Plant,1017
+18,Scope1,Ferro Manganese,Nm3,215400,18,15293.4,2006-04-01,Central Steel Plant,1018
+19,Scope1,Ferro Silicon,KL,197148,19,208582,2006-04-01,Central Steel Plant,1019
+20,Scope1,Silico Manganese,KL,251841,20,582257,2006-04-01,Central Steel Plant,1020
+21,Scope1,Coke Oven Gas,KL,13908700,21,14159000,2006-04-01,Central Steel Plant,1021
+22,Scope1,Blast Furnace Gas,Nm3,39343300,22,85178400,2006-04-01,Central Steel Plant,1022
+23,Scope1,BOF Gas,KL,33194100,23,49890800,2006-04-01,Central Steel Plant,1023
+24,Scope1,Coal Tar,KL,78854.2,24,37692.3,2006-04-01,Central Steel Plant,1024
+25,Scope1,Pitch,tonnes,259938,25,272155,2006-04-01,Central Steel Plant,1025
+26,Scope1,EAF Electrodes,KL,66020.9,26,131844,2006-04-01,Central Steel Plant,1026
+27,Scope1,Dolomite,Nm3,558458,27,1156010,2006-04-01,Central Steel Plant,1027
+28,Scope1,Crude Dolomite,KL,188090,28,378438,2006-04-01,Central Steel Plant,1028
+29,Scope1,HFO,KL,7658.56,29,17522.8,2006-04-01,Central Steel Plant,1029
+30,Scope1,Lubricating Oil,tonnes,1860.97,30,4250.46,2006-04-01,Central Steel Plant,1030
+31,Scope1,Hydraulic Oil,tonnes,2057.03,31,3110.23,2006-04-01,Central Steel Plant,1031
+32,Scope1,Transformer Oil,KL,4885.68,32,15331.3,2006-04-01,Central Steel Plant,1032
+33,Scope1,Ethylene,KL,177871,33,229275,2006-04-01,Central Steel Plant,1033
+34,Scope1,Methane,Nm3,77022200,34,117690000,2006-04-01,Central Steel Plant,1034
+35,Scope1,Acetylene,KL,3999610,35,12486800,2006-04-01,Central Steel Plant,1035
+36,Scope1,Oxygen,Nm3,37489700,36,105796000,2006-04-01,Central Steel Plant,1036
+37,Scope1,Argon,Nm3,55186900,37,136036000,2006-04-01,Central Steel Plant,1037
+38,Scope1,Nitrogen,KL,5180290,38,1833820,2006-04-01,Central Steel Plant,1038
+39,Scope1,Ammonia,Nm3,776141,39,2498400,2006-04-01,Central Steel Plant,1039
+40,Scope1,Propane,Nm3,992280,40,2481690,2006-04-01,Central Steel Plant,1040
+41,Scope1,Biomass Briquettes,tonnes,880972,41,3079880,2006-04-01,Central Steel Plant,1041
+42,Scope1,Charcoal,KL,166145,42,87392,2006-04-01,Central Steel Plant,1042
+43,Scope1,Plastic Waste Fuel,KL,180490,43,548510,2006-04-01,Central Steel Plant,1043
+44,Scope1,Wood Chips,KL,50876.9,44,29101.6,2006-04-01,Central Steel Plant,1044
+45,Scope1,Firewood,Nm3,8313.17,45,17923.2,2006-04-01,Central Steel Plant,1045
+46,Scope1,Carbon Black,KL,482372,46,210796,2006-04-01,Central Steel Plant,1046
+47,Scope1,Steel Scrap,KL,674991,47,2004050,2006-04-01,Central Steel Plant,1047
+48,Scope1,Spent Solvents,Nm3,2824.48,48,5632.01,2006-04-01,Central Steel Plant,1048
+49,Scope1,Waste Lubricants,tonnes,7868.24,49,11235.8,2006-04-01,Central Steel Plant,1049
+50,Scope1,High Speed Diesel,KL,1000.91,50,246.224,2006-04-01,Central Steel Plant,1050
+51,Scope1,Mineral Turpentine Oil,tonnes,7661.42,51,18709.2,2006-04-01,Central Steel Plant,1051
+52,Scope1,Glycerine,KL,888750,52,1413110,2006-04-01,Central Steel Plant,1052
+53,Scope1,Process Gas Mix,KL,43826500,53,110793000,2006-04-01,Central Steel Plant,1053
+54,Scope1,Producer Gas,Nm3,18814600,54,57064600,2006-04-01,Central Steel Plant,1054
+55,Scope1,Sponge Iron,tonnes,480000,55,1638720,2006-04-01,Central Steel Plant,1055
+56,Scope1,Mill Scale,Nm3,115928,56,347319,2006-04-01,Central Steel Plant,1056
+57,Scope1,Hot Metal,tonnes,474664,57,21359.9,2006-04-01,Central Steel Plant,1057
+58,Scope1,Refractory Waste,Nm3,470695,58,594017,2006-04-01,Central Steel Plant,1058
+59,Scope1,Carbon Paste,tonnes,399621,59,1021430,2006-04-01,Central Steel Plant,1059
+60,Scope1,Waste Tyres,Nm3,315261,60,190418,2006-04-01,Central Steel Plant,1060
+61,Scope1,Used Oils,tonnes,8744.14,61,15966.8,2006-04-01,Central Steel Plant,1061
+62,Scope1,Coolant Flus,tonnes,4937.27,62,957.83,2006-04-01,Central Steel Plant,1062
+63,Scope1,Sludge Cake,tonnes,624487,63,439014,2006-04-01,Central Steel Plant,1063
+64,Scope2,Electricity,kWh,60000,64,48000,2023-01-01,Central Steel Plant,1064
+65,Scope2,Electricity,kWh,10000,65,6000,2023-01-01,Central Steel Plant,1065
+66,Scope2,Steam,GJ,15000,66,3000,2023-01-01,Central Steel Plant,1066
+67,Scope2,Electricity,kWh,5000,67,4250,2023-01-01,Central Steel Plant,1067
+68,Scope2,Electricity,kWh,8300000,68,5893000,2023-04-01,Central Steel Plant,1068
+69,Scope2,Electricity,kWh,24000,69,19200,2023-07-01,Central Steel Plant,1069
+70,Scope3,Disposal,tonnes,15733.8,70,1573.38,2024-01-01,Central Steel Plant,1070
+71,Scope3,Travel,km,478426,71,86.1168,2024-01-01,Central Steel Plant,1071
+72,Scope3,Goods,tonnes,325926,72,81481.5,2024-01-01,Central Steel Plant,1072
+73,Scope3,Travel,km,1026080,73,123.129,2024-01-01,Central Steel Plant,1073
+74,Scope3,Goods and Travel,tonnes-km,75528300,74,3776.42,2024-01-01,Central Steel Plant,1074
+75,Scope3,Goods and Travel,units,182704,75,146163,2024-01-01,Central Steel Plant,1075
+76,Scope3,Goods and Travel,GJ,1073650,76,21472.9,2024-01-01,Central Steel Plant,1076
+77,Scope3,Goods and Travel,INR,515000000,77,1029.47,2024-01-01,Central Steel Plant,1077
+78,Scope3,Goods and Travel,tonnes-km,51672600,78,3100.35,2024-01-01,Central Steel Plant,1078
+79,Scope3,Goods and Services,tonnes,2084.89,79,4378.27,2024-01-01,Central Steel Plant,1079
+80,Scope3,Goods and Services,tonnes,1583460,80,190016,2024-01-01,Central Steel Plant,1080
+81,Scope3,recycling,tonnes,908058,81,18161.2,2024-01-01,Central Steel Plant,1081
+82,Scope3,Services,tCO2,114617,82,114617,2024-01-01,Central Steel Plant,1082
+83,Scope3,Goods,tonnes,446187,83,223094,2024-01-01,Central Steel Plant,1083
+84,Scope3,Goods,tonnes,5562.09,84,16686.3,2024-04-01,Central Steel Plant,1084
