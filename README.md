@@ -86,18 +86,18 @@ Update API base URL:
     const API_BASE_URL = "http://127.0.0.1:8000"; // or your deployed backend
     export default API_BASE_URL;
 
-5. **📊 Features
+5. **📊 Features**
 
-✅ Add & track emission records
+✅ **Add & track emission records**
 
-✅ Map emission factors
+✅ **Map emission factors**
 
-✅ Interactive dashboards & charts
+✅ **Interactive dashboards & charts**
 
-✅ SQLAlchemy ORM with MySQL
+✅ **SQLAlchemy ORM with MySQL**
 
-✅ REST API with FastAPI
+✅ **REST API with FastAPI**
 
-✅ React + Tailwind + Vite frontend**
+✅ **React + Tailwind + Vite frontend**
 
 
