@@ -20,45 +20,6 @@ The system supports **emission factor mapping, data validation, analytics, and v
 
 ![System Architecture](https://github.com/rashmi0710/Carbon-Emissions-Reporting-Platform/blob/main/_-%20visual%20selection.png)  
 
-## 📂 Project Structure
-Carbon-Emissions-Reporting-Platform/
-│── data/                          # CSV files & ER diagrams
-│
-│── frontend/green-house-gas-emission/
-│   ├── public/                    # Static assets (favicon, index.html, etc.)
-│   ├── src/
-│   │   ├── components/            # React UI Components (Navbar, Dashboard, Charts, Forms)
-│   │   ├── pages/                 # Page-level components (Home, Analytics, Reports)
-│   │   ├── api.js                 # API base configuration
-│   │   ├── App.jsx                # Root React component
-│   │   └── main.jsx               # React entry point
-│   ├── package.json
-│   ├── vite.config.js
-│   └── tailwind.config.js
-│
-│── notebooks/
-│   └── data.ipynb                 # Preprocessing & analysis notebook (Pandas, validation)
-│
-│── backend/
-│   ├── database.py                # SQLAlchemy connection setup
-│   ├── main.py                    # FastAPI entry point (routes + app init)
-│   ├── models.py                  # ORM Models (EmissionRecord, EmissionFactor, Users)
-│   ├── schemas.py                 # Pydantic schemas
-│   ├── crud.py                    # Database CRUD operations
-│   └── requirements.txt           # Python dependencies
-│
-│── docker/
-│   ├── Dockerfile.backend         # FastAPI Dockerfile
-│   ├── Dockerfile.frontend        # React Dockerfile
-│   └── docker-compose.yml         # Multi-service orchestration (DB + Backend + Frontend)
-│
-│── venv/                          # Python Virtual Environment
-│── README.md                      # Project documentation
-│── .gitignore
-
-
-
-
 ---
 
 ## ⚙️ Backend Setup (FastAPI + MySQL)
